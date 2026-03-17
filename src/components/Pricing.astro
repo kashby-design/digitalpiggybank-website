@@ -1,0 +1,126 @@
+<section id="pricing" class="pricing section">
+  <div class="container text-center">
+    <h2 data-reveal="fade-up">Pricing</h2>
+    <h3 class="pricing__trial" data-reveal="fade-up" data-stagger="1">14 day free trial</h3>
+
+    <div class="pricing__cards">
+      <div class="pricing-card" data-reveal="scale-up" data-stagger="1">
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount">$1.00</span>
+          <span class="pricing-card__period">/ Month</span>
+        </div>
+        <p class="pricing-card__billing">Billed Monthly</p>
+      </div>
+
+      <div class="pricing-card pricing-card--featured" data-reveal="scale-up" data-stagger="2">
+        <p class="pricing-card__save">Save 33%</p>
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount">$0.66</span>
+          <span class="pricing-card__period">/ Month</span>
+        </div>
+        <p class="pricing-card__billing">$7.99 Billed Annual</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pricing h2 {
+    margin-bottom: 12px;
+  }
+
+  .pricing__trial {
+    color: var(--color-text-light);
+    margin-bottom: 48px;
+    letter-spacing: 0.01em;
+  }
+
+  .pricing__cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .pricing-card {
+    background: var(--color-white);
+    border: 2px solid var(--color-border);
+    border-radius: 20px;
+    padding: 48px 56px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(207, 93, 201, 0.12);
+  }
+
+  .pricing-card--featured {
+    border-color: var(--color-magenta);
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .pricing-card--featured:hover {
+    box-shadow: 0 12px 32px rgba(207, 93, 201, 0.22);
+  }
+
+  .pricing-card__price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  .pricing-card__amount {
+    font-family: var(--font-heading);
+    font-size: clamp(2.25rem, 4vw, 3rem);
+  }
+
+  .pricing-card__period {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .pricing-card__save {
+    background: var(--gradient-primary);
+    color: white;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 10px 56px;
+    margin: 0 -56px;
+    width: calc(100% + 112px);
+  }
+
+  .pricing-card__billing {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+  }
+
+  @media (max-width: 809px) {
+    .pricing-card {
+      padding: 36px 32px;
+      min-width: unset;
+      width: 100%;
+    }
+
+    .pricing-card--featured {
+      padding-top: 0;
+    }
+
+    .pricing-card__save {
+      padding: 10px 32px;
+      margin: 0 -32px;
+      width: calc(100% + 64px);
+    }
+  }
+</style>

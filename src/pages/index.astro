@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeatureSection from '../components/FeatureSection.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Pricing from '../components/Pricing.astro';
+import CtaSection from '../components/CtaSection.astro';
+import Roadmap from '../components/Roadmap.astro';
+import Faq from '../components/Faq.astro';
+---
+
+<BaseLayout title="Digital Piggy Bank – Track Allowances Without Breaking the Bank">
+  <Hero />
+
+  <FeatureSection
+    title="Effortless tracking"
+    description="Easily remove and add money from each child without having to do the math yourself."
+    image="/images/effortless_tracking.png"
+    imageAlt="A card of a child and how much they have saved, mimicking what is available on the app"
+  />
+
+  <FeatureSection
+    title="Teach financial skills"
+    description="Help your kids learn how to save and manage their money. The app also helps you implement a system that keeps kids motivated to accomplish their responsibilities."
+    image="/images/financial_skills.png"
+    imageAlt="A daughter and father talking about money around a laptop"
+    reverse
+  />
+
+  <FeatureSection
+    title="No Bank needed"
+    description="A simple ledger for your family use. No need to create bank accounts when in reality, you (the parent or guardian) are the bank. A simple tool for you to manage your tiny clients money."
+    image="/images/no_bank.png"
+    imageAlt="A vector illustration of a large bank and two trees"
+  />
+
+  <FeatureSection
+    title="Never Forget their money"
+    description="Kids forget their money? No problem, you have access their balance from anywhere."
+    image="/images/never_forget.png"
+    imageAlt="A vector illustration of a car on a road driving"
+    reverse
+  />
+
+  <Testimonials />
+  <Pricing />
+  <CtaSection />
+  <Roadmap />
+  <Faq />
+</BaseLayout>

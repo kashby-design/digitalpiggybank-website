@@ -1,0 +1,72 @@
+---
+import AppStoreButtons from './AppStoreButtons.astro';
+---
+
+<section class="cta">
+  <div class="cta__inner container">
+    <div class="cta__text" data-reveal="fade-up">
+      <h1>Put a Piggy Bank in Your Pocket</h1>
+      <AppStoreButtons />
+    </div>
+    <div class="cta__image" data-reveal="fade-up">
+      <img
+        src="/images/phone-images.png"
+        alt="3 phones with different screens from the Digital Piggy Bank app"
+        width="500"
+        height="400"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    background: #EDF2F7;
+    padding: 96px 0 0;
+    overflow: hidden;
+  }
+
+  .cta__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+  }
+
+  .cta__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .cta h1 {
+    color: #1A202C;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .cta__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta__image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 809px) {
+    .cta {
+      padding: 56px 0 0;
+    }
+
+    .cta__inner {
+      gap: 32px;
+    }
+  }
+</style>

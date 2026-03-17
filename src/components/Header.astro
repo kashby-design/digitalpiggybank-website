@@ -1,0 +1,166 @@
+---
+const isHome = Astro.url.pathname === '/';
+const prefix = isHome ? '' : '/';
+---
+
+<header class="header">
+  <nav class="header__nav container">
+    <a href={`${prefix}#top`} class="header__logo">
+      <img src="/images/App-Icon.svg" alt="Digital Piggy Bank app icon" width="40" height="40" />
+      <span>Digital Piggy Bank</span>
+    </a>
+
+    <button class="header__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="header__links">
+      <li><a href={`${prefix}#testimonials`}>Testimonials</a></li>
+      <li><a href={`${prefix}#pricing`}>Pricing</a></li>
+      <li><a href={`${prefix}#roadmap`}>Roadmap</a></li>
+      <li><a href={`${prefix}#faq`}>FAQ</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.querySelector('.header__toggle');
+  const links = document.querySelector('.header__links');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+    // Close menu when a link is clicked
+    links.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        links.classList.remove('open');
+      });
+    });
+  }
+</script>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+
+  .header__logo img {
+    border-radius: 8px;
+  }
+
+  .header__links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .header__links a {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .header__links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-magenta);
+    transition: width 0.2s ease-out;
+  }
+
+  .header__links a:hover {
+    color: var(--color-magenta);
+  }
+
+  .header__links a:hover::after {
+    width: 100%;
+  }
+
+  .header__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .header__toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  @media (max-width: 809px) {
+    .header__toggle {
+      display: flex;
+    }
+
+    .header__links {
+      display: none;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: var(--color-white);
+      padding: 20px var(--container-padding);
+      gap: 16px;
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__links.open {
+      display: flex;
+    }
+
+    .header__toggle[aria-expanded="true"] span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .header__toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .header__toggle[aria-expanded="true"] span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+</style>

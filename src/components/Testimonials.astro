@@ -1,0 +1,85 @@
+---
+const testimonials = [
+  "No more managing cash or big bank transfers. This app is so easy to use and great to keep track of my kids money.",
+  "We all went plastic ages ago and kids were the only reason we kept coins and cash around, thank god we can get rid of all that now. Great idea!",
+  "We use this to help our kids track their money after doing little jobs around the house. Works great!",
+];
+---
+
+<section id="testimonials" class="testimonials section">
+  <div class="container">
+    <h2 class="text-center" data-reveal="fade-up">What Our Users are Saying</h2>
+    <div class="testimonials__grid">
+      {testimonials.map((text, i) => (
+        <div class="testimonial-card" data-reveal="fade-up" data-stagger={String(i + 1)}>
+          <div class="testimonial-card__stars" aria-label="5 stars">
+            {Array.from({ length: 5 }).map(() => (
+              <img src="/images/star.svg" alt="" width="24" height="24" />
+            ))}
+          </div>
+          <p>{text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    background: linear-gradient(#f682f0 13%, #cf5dc9 87%);
+  }
+
+  .testimonials h2 {
+    margin-bottom: 56px;
+    color: var(--color-white);
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .testimonial-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .testimonial-card__stars {
+    display: flex;
+    gap: 4px;
+  }
+
+  .testimonial-card p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+    line-height: 1.75;
+  }
+
+  @media (max-width: 809px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-card {
+      padding: 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .testimonials__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

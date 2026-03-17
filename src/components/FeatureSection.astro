@@ -1,0 +1,80 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  reverse?: boolean;
+}
+
+const { title, description, image, imageAlt, reverse = false } = Astro.props;
+---
+
+<section class:list={['feature section', { 'feature--reverse': reverse }]}>
+  <div class="feature__inner container">
+    <div class="feature__image" data-reveal={reverse ? 'slide-right' : 'slide-left'}>
+      <img src={image} alt={imageAlt} width="400" height="400" loading="lazy" />
+    </div>
+    <div class="feature__text" data-reveal={reverse ? 'slide-left' : 'slide-right'}>
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .feature__inner {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .feature--reverse .feature__inner {
+    flex-direction: row-reverse;
+  }
+
+  .feature__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .feature__text {
+    flex: 1;
+  }
+
+  .feature__text h2 {
+    margin-bottom: 20px;
+  }
+
+  .feature__text p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-md);
+    line-height: 1.75;
+  }
+
+  @media (max-width: 809px) {
+    .feature__inner,
+    .feature--reverse .feature__inner {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .feature__image img {
+      max-width: 75%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .feature__inner {
+      gap: 24px;
+    }
+  }
+</style>

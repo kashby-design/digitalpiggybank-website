@@ -1,0 +1,164 @@
+---
+const versions = [
+  {
+    version: 'V1.0',
+    status: 'Completed',
+    statusClass: 'completed',
+    items: ['Allowance Tracking', 'Account Management', 'Login and App Tracking'],
+    road: '/images/roads-1.png',
+    roadWidth: 163,
+  },
+  {
+    version: 'V2.0',
+    status: 'Designing',
+    statusClass: 'designing',
+    items: ['Linking Parent Logins', 'Kids Logins', 'Set Goals for Kids'],
+    road: '/images/roads-2.png',
+    roadWidth: 276,
+  },
+  {
+    version: 'V3.0',
+    status: 'Not Started',
+    statusClass: 'not-started',
+    items: ['Add Chores', 'Complete Chores', 'Chore Approvals'],
+    road: '/images/roads-3.png',
+    roadWidth: 200,
+  },
+];
+---
+
+<section id="roadmap" class="roadmap section">
+  <div class="container">
+    <h2 class="text-center" data-reveal="fade-up">Roadmap</h2>
+    <div class="roadmap__timeline">
+      {versions.map((v, i) => (
+        <>
+          <div class="roadmap__item" data-reveal="fade-up">
+            <div class="roadmap__header">
+              <h3>{v.version}</h3>
+              <span class={`roadmap__status roadmap__status--${v.statusClass}`}>{v.status}</span>
+            </div>
+            <ul class="roadmap__features">
+              {v.items.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+          {i < versions.length - 1 && (
+            <div class="roadmap__road" data-reveal="fade-in">
+              <img src={v.road} alt="Road illustration" style={`width: ${v.roadWidth}px`} loading="lazy" />
+            </div>
+          )}
+        </>
+      ))}
+      <div class="roadmap__road" data-reveal="fade-in">
+        <img src="/images/roads-3.png" alt="Road illustration" style="width: 200px" loading="lazy" />
+      </div>
+      <h3 class="roadmap__more text-center" data-reveal="fade-up">More to Come</h3>
+    </div>
+  </div>
+</section>
+
+<style>
+  .roadmap h2 {
+    margin-bottom: 56px;
+  }
+
+  .roadmap__timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .roadmap__item {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 36px;
+    width: 100%;
+    max-width: 480px;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .roadmap__item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .roadmap__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .roadmap__header h3 {
+    font-size: 1.5rem;
+  }
+
+  .roadmap__status {
+    font-size: var(--font-size-xs);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .roadmap__status--completed {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .roadmap__status--designing {
+    background: #fff3e0;
+    color: #e65100;
+  }
+
+  .roadmap__status--not-started {
+    background: #f3e5f5;
+    color: #7b1fa2;
+  }
+
+  .roadmap__features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .roadmap__features li {
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .roadmap__features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-magenta);
+  }
+
+  .roadmap__road {
+    display: flex;
+    justify-content: center;
+  }
+
+  .roadmap__road img {
+    height: auto;
+  }
+
+  .roadmap__more {
+    margin-top: 16px;
+    color: var(--color-text-light);
+  }
+
+  @media (max-width: 809px) {
+    .roadmap__item {
+      padding: 24px;
+    }
+  }
+</style>

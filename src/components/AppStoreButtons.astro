@@ -1,0 +1,49 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class:list={['app-store-buttons', className]}>
+  <a
+    href="https://apps.apple.com/us/app/digital-piggy-bank/id6736767040"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Download on the App Store"
+  >
+    <img src="/images/app-store-button.svg" alt="Download on the App Store" width="140" height="42" />
+  </a>
+  <a
+    href="https://play.google.com/store/apps/details?id=com.piggybankapp&hl=en_US"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Get it on Google Play"
+  >
+    <img src="/images/play-store-button.svg" alt="Get it on Google Play" width="140" height="42" />
+  </a>
+</div>
+
+<style>
+  .app-store-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .app-store-buttons a {
+    display: inline-flex;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  }
+
+  .app-store-buttons a:hover {
+    transform: scale(1.04);
+  }
+
+  .app-store-buttons img {
+    height: 42px;
+    width: auto;
+  }
+</style>

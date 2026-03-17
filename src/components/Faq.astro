@@ -1,0 +1,173 @@
+---
+const faqs = [
+  {
+    number: '/images/01.svg',
+    question: "What if I don't want my kids to have phones?",
+    answer: "No phone for the kids? No problem! All actions happen on the parent's phone, so you're in complete control of their digital piggy bank.",
+  },
+  {
+    number: '/images/02.svg',
+    question: 'How are my children ever going to see their amount?',
+    answer: "Right now, they would have to ask their parents to know how much they have, but in the next version we will release a kids login that they could put on their phone.",
+  },
+  {
+    number: '/images/03.svg',
+    question: 'Why is this better than a piggy bank?',
+    answer: null,
+    bullets: [
+      "With our app, your kids' money is always just a tap away! Whether you're at the store and they want to know if they can afford a new toy, there's no need to run home to check the piggy bank—just use your card and update their balance in the app!",
+      "Plus, whenever they earn money from chores or birthday gifts, you can add it right away, and they'll see their savings grow without breaking open the piggy bank to count those coins.",
+      "Eww money",
+    ],
+  },
+  {
+    number: '/images/04.svg',
+    question: 'Is there a cost?',
+    answer: "When you download the app, you get a 14 day free trial, and only pay $7.99/year (That's less than .70¢/month) or $1.00/month.",
+  },
+];
+---
+
+<section id="faq" class="faq section">
+  <div class="container">
+    <h2 class="text-center" data-reveal="fade-up">FAQ</h2>
+    <div class="faq__list">
+      {faqs.map((faq) => (
+        <details class="faq__item" data-reveal="fade-up">
+          <summary class="faq__question">
+            <img src={faq.number} alt="" width="48" height="48" aria-hidden="true" />
+            <h3>{faq.question}</h3>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              {faq.answer && <p>{faq.answer}</p>}
+              {faq.bullets && (
+                <ul>
+                  {faq.bullets.map((bullet) => (
+                    <li>{bullet}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq {
+    background: #EDF2F7;
+  }
+
+  .faq h2 {
+    margin-bottom: 56px;
+  }
+
+  .faq__list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .faq__item {
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .faq__question {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 28px 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__question img {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  .faq__question h3 {
+    flex: 1;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+
+  .faq__icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-text-light);
+    transition: transform 0.3s ease-out;
+    flex-shrink: 0;
+  }
+
+  .faq__item[open] .faq__icon {
+    transform: rotate(45deg);
+  }
+
+  /* Animate answer on open */
+  .faq__answer {
+    padding: 0 28px 0 96px;
+    color: var(--color-text-light);
+    line-height: 1.8;
+  }
+
+  .faq__item[open] .faq__answer {
+    padding-bottom: 28px;
+    animation: faq-open 300ms ease-out;
+  }
+
+  @keyframes faq-open {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  .faq__answer-inner {
+  }
+
+  .faq__answer-inner ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .faq__answer-inner li {
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .faq__answer-inner li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-magenta);
+  }
+
+  @media (max-width: 809px) {
+    .faq__question {
+      padding: 20px 16px;
+      gap: 12px;
+    }
+
+    .faq__question img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .faq__answer {
+      padding-left: 24px;
+      padding-right: 16px;
+    }
+  }
+</style>

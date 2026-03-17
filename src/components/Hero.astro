@@ -1,0 +1,150 @@
+---
+import AppStoreButtons from './AppStoreButtons.astro';
+---
+
+<section id="top" class="hero section-dark">
+  <div class="hero__inner container">
+    <div class="hero__text">
+      <div class="hero__titles">
+        <h1 class="hero__title">Track Allowances</h1>
+        <h1 class="hero__subtitle">without breaking the Bank</h1>
+      </div>
+      <p class="hero__tagline">For parents of kids too young to have a bank account and who don't have cash lying around to fill a physical piggy bank</p>
+      <AppStoreButtons />
+    </div>
+    <div class="hero__image">
+      <img
+        src="/images/breaking-piggy-bank.png"
+        alt="A phone falling on a black background, then crashing into a porcelain piggy bank and breaking it"
+        width="500"
+        height="500"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background: var(--color-dark);
+    padding: 132px 0 0;
+    overflow: hidden;
+  }
+
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .hero__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    margin: 0;
+    line-height: 1;
+    color: var(--color-white);
+  }
+
+  .hero__tagline {
+    font-size: 1.125rem;
+    color: var(--color-white);
+    max-width: 609px;
+    line-height: 1.5;
+    letter-spacing: 0.005em;
+  }
+
+  .hero__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* === On-Load Keyframes === */
+  @keyframes hero-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hero-image-entrance {
+    from {
+      opacity: 0;
+      transform: translateY(32px) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes hero-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* === On-Load Animations (motion-safe) === */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero__title {
+      animation: hero-fade-up 500ms ease-out both;
+      animation-delay: 0ms;
+    }
+
+    .hero__subtitle {
+      animation: hero-fade-up 500ms ease-out both;
+      animation-delay: 120ms;
+    }
+
+    .hero__tagline {
+      animation: hero-fade-up 450ms ease-out both;
+      animation-delay: 240ms;
+    }
+
+    .hero__text > :global(.app-store-buttons) {
+      animation: hero-fade-up 400ms ease-out both;
+      animation-delay: 360ms;
+    }
+
+    .hero__image {
+      animation: hero-image-entrance 600ms ease-out both;
+      animation-delay: 180ms;
+    }
+
+    .hero__image img {
+      animation: hero-float 4s ease-in-out infinite;
+      animation-delay: 800ms;
+    }
+  }
+
+  @media (max-width: 809px) {
+    .hero {
+      padding: 80px 0 0;
+    }
+
+    .hero__tagline {
+      max-width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,194 @@
+/* === Reset === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  color: var(--color-text);
+  background: var(--color-white);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* === CSS Variables === */
+:root {
+  --color-pink: #f682f0;
+  --color-magenta: #cf5dc9;
+  --color-dark: #0a0a0a;
+  --color-dark-bg: #111111;
+  --color-white: #ffffff;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-on-dark: #ffffff;
+  --color-border: #e5e5e5;
+
+  --gradient-primary: linear-gradient(135deg, var(--color-pink), var(--color-magenta));
+  --gradient-hero: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+
+  --font-display: 'Modak', cursive;
+  --font-heading: 'Orelega One', serif;
+  --font-body: 'Noto Sans', 'Inter', sans-serif;
+
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.0625rem;
+  --font-size-lg: 1.125rem;
+
+  --container-max: 1200px;
+  --container-padding: 32px;
+
+  --section-spacing: 96px;
+  --section-spacing-mobile: 56px;
+}
+
+/* === Typography === */
+h1, h2, h3, h4 {
+  line-height: 1.15;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2vw, 1.625rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* === Layout Utilities === */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: var(--section-spacing) 0;
+}
+
+.section-dark {
+  background: var(--color-dark-bg);
+  color: var(--color-text-on-dark);
+}
+
+.section-gradient {
+  background: var(--gradient-primary);
+  color: var(--color-text-on-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === Responsive === */
+@media (max-width: 809px) {
+  .section {
+    padding: var(--section-spacing-mobile) 0;
+  }
+
+  :root {
+    --container-padding: 20px;
+  }
+}
+
+/* === Scroll Reveal === */
+[data-reveal] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal="fade-up"] { transform: translateY(32px); }
+  [data-reveal="fade-in"] { opacity: 0; }
+  [data-reveal="slide-left"] { transform: translateX(-40px); }
+  [data-reveal="slide-right"] { transform: translateX(40px); }
+  [data-reveal="scale-up"] { transform: scale(0.94); }
+
+  @keyframes reveal-fade-up {
+    from { opacity: 0; transform: translateY(32px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes reveal-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes reveal-slide-left {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes reveal-slide-right {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes reveal-scale-up {
+    from { opacity: 0; transform: scale(0.94); }
+    to { opacity: 1; transform: none; }
+  }
+
+  .revealed[data-reveal="fade-up"] { animation: reveal-fade-up 500ms ease-out both; }
+  .revealed[data-reveal="fade-in"] { animation: reveal-fade-in 400ms ease-out both; }
+  .revealed[data-reveal="slide-left"] { animation: reveal-slide-left 500ms ease-out both; }
+  .revealed[data-reveal="slide-right"] { animation: reveal-slide-right 500ms ease-out both; }
+  .revealed[data-reveal="scale-up"] { animation: reveal-scale-up 400ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+
+  .revealed[data-stagger="1"] { animation-delay: 100ms; }
+  .revealed[data-stagger="2"] { animation-delay: 200ms; }
+  .revealed[data-stagger="3"] { animation-delay: 300ms; }
+}
