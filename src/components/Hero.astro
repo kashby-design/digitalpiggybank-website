@@ -2,7 +2,7 @@
 import AppStoreButtons from './AppStoreButtons.astro';
 ---
 
-<section id="top" class="hero section-dark">
+<section id="top" class="hero">
   <div class="hero__inner container">
     <div class="hero__text">
       <div class="hero__titles">
@@ -12,22 +12,47 @@ import AppStoreButtons from './AppStoreButtons.astro';
       <p class="hero__tagline">For parents of kids too young to have a bank account and who don't have cash lying around to fill a physical piggy bank</p>
       <AppStoreButtons />
     </div>
-    <div class="hero__image">
-      <img
-        src="/images/breaking-piggy-bank.png"
-        alt="A phone falling on a black background, then crashing into a porcelain piggy bank and breaking it"
-        width="500"
-        height="500"
-      />
-    </div>
   </div>
+  <video class="hero__video" muted playsinline preload="auto">
+    <source src="/images/hero-video.mp4" type="video/mp4" />
+  </video>
 </section>
+
+<script>
+  const video = document.querySelector('.hero__video') as HTMLVideoElement;
+  if (video) {
+    let lastScrollY = window.scrollY;
+    let isInView = false;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          isInView = entry.isIntersecting;
+        });
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(document.querySelector('.hero')!);
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      const scrollingDown = currentScrollY > lastScrollY;
+      lastScrollY = currentScrollY;
+
+      if (scrollingDown && isInView && video.paused && !video.ended) {
+        video.play();
+      }
+    }, { passive: true });
+  }
+</script>
 
 <style>
   .hero {
-    background: var(--color-dark);
-    padding: 132px 0 0;
+    background: white;
+    padding: 132px 0 80px;
     overflow: hidden;
+    position: relative;
+    min-height: 56.25vw; /* 16:9 aspect ratio */
   }
 
   .hero__inner {
@@ -35,6 +60,8 @@ import AppStoreButtons from './AppStoreButtons.astro';
     flex-direction: column;
     align-items: center;
     gap: 29px;
+    position: relative;
+    z-index: 1;
   }
 
   .hero__text {
@@ -54,27 +81,27 @@ import AppStoreButtons from './AppStoreButtons.astro';
   .hero h1 {
     margin: 0;
     line-height: 1;
-    color: var(--color-white);
+    color: var(--color-dark);
   }
 
   .hero__tagline {
     font-size: 1.125rem;
-    color: var(--color-white);
+    color: var(--color-dark);
     max-width: 609px;
     line-height: 1.5;
     letter-spacing: 0.005em;
   }
 
-  .hero__image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero__image img {
-    width: 100%;
-    max-width: 100%;
+  .hero__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
+    z-index: 0;
   }
 
   /* === On-Load Keyframes === */
@@ -87,22 +114,6 @@ import AppStoreButtons from './AppStoreButtons.astro';
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  @keyframes hero-image-entrance {
-    from {
-      opacity: 0;
-      transform: translateY(32px) scale(0.96);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
-
-  @keyframes hero-float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
   }
 
   /* === On-Load Animations (motion-safe) === */
@@ -125,16 +136,6 @@ import AppStoreButtons from './AppStoreButtons.astro';
     .hero__text > :global(.app-store-buttons) {
       animation: hero-fade-up 400ms ease-out both;
       animation-delay: 360ms;
-    }
-
-    .hero__image {
-      animation: hero-image-entrance 600ms ease-out both;
-      animation-delay: 180ms;
-    }
-
-    .hero__image img {
-      animation: hero-float 4s ease-in-out infinite;
-      animation-delay: 800ms;
     }
   }
 
