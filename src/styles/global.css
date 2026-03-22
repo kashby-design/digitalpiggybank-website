@@ -66,8 +66,9 @@ ul, ol {
 }
 
 /* === Typography === */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
+  text-wrap: balance;
 }
 
 h1 {
@@ -95,6 +96,7 @@ h3 {
 
 p {
   margin-bottom: 1rem;
+  text-wrap: pretty;
 }
 
 p:last-child {
