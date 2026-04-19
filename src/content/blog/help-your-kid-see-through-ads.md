@@ -1,5 +1,5 @@
 ---
-title: "# How to Help Your Kid See Through Ads and Stop Impulse Buying"
+title: "How to Help Your Kid See Through Ads and Stop Impulse Buying"
 date: 2026-03-17
 description: "Impulse control ads kids. Advertising to children, kids impulse buying, teach kids about ads, stop advertising to kids, kids and marketing, children advertising awareness, impulse control activities for kids"
 image: "/images/blog/help-kids-see-through-ads.png"
