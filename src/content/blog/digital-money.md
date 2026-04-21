@@ -1,6 +1,6 @@
 ---
 title: "When Money Is Invisible: How to Teach 11 and 12 Year Olds About Digital Payments"
-date: 2026-04-31
+date: 2026-03-31
 description: "digital money for kids, cashless kids, kids digital payments, teaching kids about digital money, digital piggy bank app, kids financial literacy digital age, safe digital payments for children, kids money management app"
 image: "/images/blog/digital-money.png"
 imageAlt: "daughter is tapping an ATM machine and money is flying out magically"
