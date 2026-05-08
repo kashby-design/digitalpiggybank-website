@@ -65,5 +65,3 @@ He didn't buy the skin. Not because I told him no, but because he saw the tradeo
 ## Start Small, Build Confidence
 
 You don't need to overhaul your family's financial education overnight. Pick one of these strategies and start this week. Walk through a transaction. Have the conversation about how apps are designed to get them to spend. Set a 24 hour rule.
-
-If you want to give your kid a place to practice managing digital money with real structure, Digital Piggy Bank makes it easy. It's a simple app that lets kids track their money across save, spend, and give categories, so they can see exactly where their money is and make their own decisions about where it goes. Think of it as training wheels for the cashless world they're already living in.

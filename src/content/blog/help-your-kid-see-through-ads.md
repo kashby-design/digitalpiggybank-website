@@ -78,6 +78,4 @@ You don't need a curriculum or a weekend seminar. Start with one conversation du
 
 These small moments add up to a kid who thinks before they buy. And that's a skill worth more than anything an ad is selling.
 
-If you want to give your kid a hands-on way to practice saving, spending, and making smart choices with real money, Digital Piggy Bank makes it easy to track it all in one place. No ads, no gimmicks. Just a simple tool that puts your kid in the driver's seat of their own money decisions.
-
 source: https://www.financialeducatorscouncil.org/stop-advertising-to-kids/

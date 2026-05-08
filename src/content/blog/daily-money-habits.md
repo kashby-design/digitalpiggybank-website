@@ -73,5 +73,3 @@ That's where a tool like [Digital Piggy Bank](https://digitalpiggybank.com) fits
 ## Start small. Start today.
 
 You don't need a perfect system. You need five minutes today. Pick one habit from the list above. Try it for a week. Then add another.
-
-If you want a simple way to make the daily routine stick, [Digital Piggy Bank](https://digitalpiggybank.com) gives your tween a save, spend, and give tracker they'll actually open every day. The habit loop runs on autopilot while you focus on the bigger conversations about money, work, and what your family values.

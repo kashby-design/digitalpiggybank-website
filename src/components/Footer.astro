@@ -5,6 +5,7 @@ import AppStoreButtons from './AppStoreButtons.astro';
 <footer class="footer">
   <div class="footer__inner container">
     <div class="footer__content" data-reveal="fade-up">
+      <h3 class="footer__download-heading">Download the app today!</h3>
       <AppStoreButtons />
 
       <div class="footer__columns">
@@ -57,6 +58,13 @@ import AppStoreButtons from './AppStoreButtons.astro';
     display: flex;
     flex-direction: column;
     gap: 28px;
+  }
+
+  .footer__download-heading {
+    color: var(--color-white);
+    margin: 0;
+    font-size: var(--font-size-xl);
+    line-height: 1.2;
   }
 
   .footer__columns {
