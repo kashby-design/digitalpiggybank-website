@@ -57,14 +57,17 @@ import AppStoreButtons from './AppStoreButtons.astro';
   .footer__content {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 16px;
   }
 
   .footer__download-heading {
     color: var(--color-white);
     margin: 0;
-    font-size: var(--font-size-xl);
     line-height: 1.2;
+  }
+
+  .footer__content > :global(.app-store-buttons) {
+    margin-bottom: 12px;
   }
 
   .footer__columns {
