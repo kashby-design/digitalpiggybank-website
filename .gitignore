@@ -19,3 +19,8 @@ Thumbs.db
 
 # astro
 .astro/
+
+# local tooling / MCP artifacts
+.claude/
+.playwright-mcp/
+/homepage-full.jpeg
