@@ -104,3 +104,9 @@ Start small. Start tonight. Put a marshmallow on the table and see what happens.
 And if you are looking for a way to keep the momentum going, a digital piggy bank can turn that one-night experiment into a lasting habit — one progress bar at a time.
 
 **Source:** *Stanford Marshmallow Experiment -- Wikipedia (en.wikipedia.org/wiki/Stanford_marshmallow_experiment)*
+
+### Keep reading
+
+- [Piggy Banks to Goals: Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)
+- [How to Help Your Kid See Through Ads](/blog/help-your-kid-see-through-ads)
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)

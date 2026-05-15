@@ -5,15 +5,15 @@ import AppStoreButtons from './AppStoreButtons.astro';
 <section id="top" class="hero">
   <div class="hero__inner container">
     <div class="hero__text">
-      <div class="hero__titles">
-        <h1 class="hero__title">Track Allowances</h1>
-        <h1 class="hero__subtitle">without breaking the Bank</h1>
-      </div>
+      <h1 class="hero__titles">
+        <span class="hero__title">Track Allowances</span>
+        <span class="hero__subtitle">without breaking the Bank</span>
+      </h1>
       <p class="hero__tagline">For parents of kids too young to have a bank account and who don't have cash lying around to fill a physical piggy bank</p>
       <AppStoreButtons />
     </div>
   </div>
-  <video class="hero__video" muted playsinline preload="auto">
+  <video class="hero__video" muted playsinline preload="metadata" poster="/images/hero-poster.jpg">
     <source src="/images/hero-video.mp4" type="video/mp4" />
   </video>
 </section>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { article, breadcrumbList } from '../../lib/schema';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,6 +13,12 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const BRAND_SUFFIX = ' | Digital Piggy Bank';
+const pageTitle =
+  post.data.title.length + BRAND_SUFFIX.length <= 60
+    ? `${post.data.title}${BRAND_SUFFIX}`
+    : post.data.title;
 
 const allPosts = (await getCollection('blog'))
   .filter((p) => !p.data.draft)
@@ -27,9 +34,28 @@ function formatDate(date: Date) {
     day: 'numeric',
   });
 }
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const articleSchema = article({
+  title: post.data.title,
+  description: post.data.description,
+  image: post.data.image,
+  datePublished: post.data.date,
+  url: canonicalURL,
+});
+const breadcrumbSchema = breadcrumbList([
+  { name: 'Home', url: new URL('/', Astro.site).toString() },
+  { name: 'Blog', url: new URL('/blog', Astro.site).toString() },
+  { name: post.data.title, url: canonicalURL },
+]);
 ---
 
-<BaseLayout title={`${post.data.title} - Digital Piggy Bank`} description={post.data.description} image={post.data.image}>
+<BaseLayout
+  title={pageTitle}
+  description={post.data.description}
+  image={post.data.image}
+  extraSchema={[articleSchema, breadcrumbSchema]}
+>
   <article class="blog-post">
     <div class="blog-post__hero">
       <img src={post.data.image} alt={post.data.imageAlt} width="1200" height="600" />

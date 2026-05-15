@@ -61,3 +61,9 @@ Sit down with your kids this weekend and set up a place for their money. A jar w
 That's why we built Digital Piggy Bank. It's the save, spend, give system in your pocket. Kids see their money grow. You skip the mental math of who has what. And the lessons mom is already teaching at the grocery store and the dinner table get to keep going every time a few dollars come in.
 
 This Mother's Day, give your kids the thing your mom probably gave you without even knowing it: a head start on understanding money. They'll thank you for it later. Probably much later. But they will.
+
+### Keep reading
+
+- [Your Kids Are Watching Your Wallet](/blog/kids-watching-your-wallet)
+- [How Much Allowance Should You Give?](/blog/pay-for-allowance)
+- [Piggy Banks to Goals: Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)

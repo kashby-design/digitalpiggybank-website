@@ -5,7 +5,7 @@ import AppStoreButtons from './AppStoreButtons.astro';
 <section class="cta">
   <div class="cta__inner container">
     <div class="cta__text" data-reveal="fade-up">
-      <h1>Put a Piggy Bank in Your Pocket</h1>
+      <h2>Put a Piggy Bank in Your Pocket</h2>
       <AppStoreButtons />
     </div>
     <div class="cta__image" data-reveal="fade-up">
@@ -42,10 +42,14 @@ import AppStoreButtons from './AppStoreButtons.astro';
     text-align: center;
   }
 
-  .cta h1 {
+  .cta h2 {
     color: #1A202C;
     margin: 0;
     line-height: 1;
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 6vw, 4.75rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
   }
 
   .cta__image {

@@ -1,7 +1,7 @@
 ---
 title: "When Money Is Invisible: How to Teach 11 and 12 Year Olds About Digital Payments"
 date: 2026-03-31
-description: "digital money for kids, cashless kids, kids digital payments, teaching kids about digital money, digital piggy bank app, kids financial literacy digital age, safe digital payments for children, kids money management app"
+description: "When money lives on a screen, kids stop seeing what it costs. Here's how to teach 11- and 12-year-olds the real value of digital payments."
 image: "/images/blog/digital-money.png"
 imageAlt: "daughter is tapping an ATM machine and money is flying out magically"
 ---
@@ -65,3 +65,9 @@ He didn't buy the skin. Not because I told him no, but because he saw the tradeo
 ## Start Small, Build Confidence
 
 You don't need to overhaul your family's financial education overnight. Pick one of these strategies and start this week. Walk through a transaction. Have the conversation about how apps are designed to get them to spend. Set a 24 hour rule.
+
+### Keep reading
+
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
+- [Your Kids Are Watching Your Wallet](/blog/kids-watching-your-wallet)
+- [How to Help Your Kid See Through Ads](/blog/help-your-kid-see-through-ads)

@@ -91,3 +91,9 @@ A physical piggy bank is a great start. For 8 to 10 year olds who want to see th
 If you're ready to swap the Friday handout for something that actually teaches, start small. Pick three paid chores. Set the rates. Run it for a month and see what happens.
 
 You might be surprised how fast a 9 year old starts thinking about money when they're the one earning it.
+
+### Keep reading
+
+- [Chores for Cash](/blog/chores-for-cash)
+- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
+- [How Much Allowance Should You Give?](/blog/pay-for-allowance)

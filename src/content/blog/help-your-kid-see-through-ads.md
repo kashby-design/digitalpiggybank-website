@@ -1,7 +1,7 @@
 ---
 title: "How to Help Your Kid See Through Ads and Stop Impulse Buying"
 date: 2026-03-17
-description: "Impulse control ads kids. Advertising to children, kids impulse buying, teach kids about ads, stop advertising to kids, kids and marketing, children advertising awareness, impulse control activities for kids"
+description: "Your kid sees a million ads before age 21. Here's how to teach them to spot the pitch — and pause before the impulse buy."
 image: "/images/blog/help-kids-see-through-ads.png"
 imageAlt: "A boy walking on top of ads, ignoring them as he walks."
 ---
@@ -79,3 +79,9 @@ You don't need a curriculum or a weekend seminar. Start with one conversation du
 These small moments add up to a kid who thinks before they buy. And that's a skill worth more than anything an ad is selling.
 
 source: https://www.financialeducatorscouncil.org/stop-advertising-to-kids/
+
+### Keep reading
+
+- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
+- [Your Kids Are Watching Your Wallet](/blog/kids-watching-your-wallet)

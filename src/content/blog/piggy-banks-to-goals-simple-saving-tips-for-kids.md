@@ -6,8 +6,6 @@ image: "/images/blog/piggy-banks-to-goals.jpg"
 imageAlt: "Saving jars labeled for different goals"
 ---
 
-### Piggy Banks to Goals: Simple Saving Tips for Kids Ages 5--12
-
 If you've ever watched your child dump out their piggy bank just to count the coins again, you know this feeling. They're proud. Curious. Excited.
 
 But then reality hits.
@@ -105,6 +103,12 @@ Weekly or bi-weekly check-ins keep saving top of mind without turning it into a 
 ## Parent Tip (Real Life)
 
 One parent shared that her 7-year-old stopped asking for impulse toys once he could see his savings progress. He started saying things like, "I don't want to mess up my goal." That shift didn't come from lectures. It came from visibility and ownership.
+
+### Keep reading
+
+- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
+- [When Money Is Invisible: Teaching Kids About Digital Payments](/blog/digital-money)
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
 
 #### Sources & Further Reading
 

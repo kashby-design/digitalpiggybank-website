@@ -1,4 +1,6 @@
 ---
+import { faqPage } from '../lib/schema';
+
 const faqs = [
   {
     number: '/images/01.svg',
@@ -27,6 +29,8 @@ const faqs = [
   },
 ];
 ---
+
+<script type="application/ld+json" set:html={JSON.stringify(faqPage(faqs))} />
 
 <section id="faq" class="faq section">
   <div class="container">

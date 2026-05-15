@@ -8,8 +8,6 @@ image: "/images/blog/kids-watching-your-wallet.png"
 imageAlt: "Parent and child at a store checkout sharing a money moment"
 ---
 
-# Your Kids Are Watching Your Wallet (But Not in the Way You Think)
-
 You're at Target with your 6 year old. You grab a cart, head past the toy aisle, and watch them pick up the third Hot Wheels car this month. You start the speech about saving money. They look up at you and say, "But you bought yourself a coffee this morning."
 
 Caught.
@@ -87,3 +85,9 @@ Your money habits matter, but not as a script your kid will copy. They matter as
 If you want a simple way to make the save, spend, give conversation a regular part of your week, [Digital Piggy Bank](https://digitalpiggybank.com) tracks all three with your kids without printing chore charts or hunting for cash. It turns the abstract idea of "managing money" into something they can see, touch, and decide on every week.
 
 Your wallet is teaching them something either way. You get to choose what.
+
+### Keep reading
+
+- [Moms Are the First Money Teachers](/blog/moms-are-money-teachers)
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
+- [How to Help Your Kid See Through Ads](/blog/help-your-kid-see-through-ads)

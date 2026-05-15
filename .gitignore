@@ -24,3 +24,8 @@ Thumbs.db
 .claude/
 .playwright-mcp/
 /homepage-full.jpeg
+
+# playwright
+test-results/
+playwright-report/
+playwright/.cache/

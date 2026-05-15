@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Lost Your Piggy? — Digital Piggy Bank"
+  description="That page wandered off. Head back home or browse the blog for parenting and money tips."
+>
+  <section class="not-found section">
+    <div class="container">
+      <p class="not-found__eyebrow">404</p>
+      <h1 class="not-found__title">Lost your piggy?</h1>
+      <p class="not-found__copy">
+        We couldn't find the page you were looking for. It might have moved, or
+        never existed. Here are a couple of places worth checking out instead.
+      </p>
+      <div class="not-found__links">
+        <a class="not-found__btn not-found__btn--primary" href="/">Back to home</a>
+        <a class="not-found__btn" href="/blog">Read the blog</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding: 96px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .not-found__eyebrow {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 12vw, 8rem);
+    color: var(--color-magenta);
+    margin: 0;
+    line-height: 1;
+  }
+
+  .not-found__title {
+    margin: 16px 0 24px;
+  }
+
+  .not-found__copy {
+    max-width: 480px;
+    margin: 0 auto 32px;
+    color: var(--color-text-light);
+  }
+
+  .not-found__links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .not-found__btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    font-weight: 500;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .not-found__btn--primary {
+    background: var(--color-magenta);
+    color: var(--color-white);
+    border-color: var(--color-magenta);
+  }
+
+  .not-found__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+</style>
