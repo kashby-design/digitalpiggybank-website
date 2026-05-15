@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const posts = (await getCollection('blog'))
   .filter((post) => !post.data.draft)
@@ -31,7 +32,16 @@ function formatDate(date: Date) {
       <div class="container">
         <a href={`/blog/${featuredPost.id}`} class="featured__link">
           <div class="featured__image">
-            <img src={featuredPost.data.image} alt={featuredPost.data.imageAlt} width="800" height="450" />
+            <Image
+              src={featuredPost.data.image}
+              alt={featuredPost.data.imageAlt}
+              widths={[480, 800, 1200]}
+              sizes="(max-width: 480px) 100vw, (max-width: 1200px) 100vw, 1200px"
+              format="avif"
+              quality={70}
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
           <div class="featured__text">
             <p class="featured__date">{formatDate(featuredPost.data.date)}</p>
@@ -49,7 +59,15 @@ function formatDate(date: Date) {
         {allPosts.map((post) => (
           <a href={`/blog/${post.id}`} class="post-card">
             <div class="post-card__image">
-              <img src={post.data.image} alt={post.data.imageAlt} width="300" height="200" loading="lazy" />
+              <Image
+                src={post.data.image}
+                alt={post.data.imageAlt}
+                widths={[300, 600]}
+                sizes="(max-width: 480px) 100vw, 300px"
+                format="avif"
+                quality={70}
+                loading="lazy"
+              />
             </div>
             <div class="post-card__text">
               <p class="post-card__date">{formatDate(post.data.date)}</p>

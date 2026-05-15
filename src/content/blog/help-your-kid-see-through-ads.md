@@ -2,7 +2,7 @@
 title: "How to Help Your Kid See Through Ads and Stop Impulse Buying"
 date: 2026-03-17
 description: "Your kid sees a million ads before age 21. Here's how to teach them to spot the pitch — and pause before the impulse buy."
-image: "/images/blog/help-kids-see-through-ads.png"
+image: "../../images/blog/help-kids-see-through-ads.png"
 imageAlt: "A boy walking on top of ads, ignoring them as he walks."
 tags:
   - ads-impulse

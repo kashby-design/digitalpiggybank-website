@@ -2,7 +2,7 @@
 title: "Chores for Cash"
 date: 2026-01-27
 description: "Should you pay kids for chores? Explore the pros, cons, and best approaches to connecting household responsibilities with allowance."
-image: "/images/blog/chores-for-cash.jpg"
+image: "../../images/blog/chores-for-cash.jpg"
 imageAlt: "Kids helping with household chores"
 tags:
   - chores

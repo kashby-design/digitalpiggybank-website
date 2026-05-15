@@ -4,7 +4,7 @@ date: 2026-04-27
 description: "Small daily money habits do more for your tween than the big money talk. Here's what habit and self-control research says about ages 11 to 12."
 primeryKeywords: "daily money habits for kids"
 SecondaryKeywords: "teaching kids to save money, money habits for tweens, how to teach kids self-control with money, building saving habits in children, money habits for 11 and 12 year olds, raising good savers, daily savings routines for kids"
-image: "/images/blog/daily-money-habits.png"
+image: "../../images/blog/daily-money-habits.png"
 imageAlt: "Tween checking savings progress on a phone app at the kitchen table"
 tags:
   - saving

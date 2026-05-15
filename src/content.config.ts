@@ -24,19 +24,20 @@ export const TAG_LABELS: Record<BlogTag, string> = {
 
 const blog = defineCollection({
   loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
-  schema: z
-    .object({
-      title: z.string(),
-      date: z.coerce.date(),
-      updatedDate: z.coerce.date().optional(),
-      description: z.string(),
-      image: z.string(),
-      imageAlt: z.string(),
-      draft: z.boolean().default(false),
-      tags: z.array(z.enum(BLOG_TAGS)).default([]),
-      author: z.string().default('Digital Piggy Bank Team'),
-    })
-    .passthrough(),
+  schema: ({ image }) =>
+    z
+      .object({
+        title: z.string(),
+        date: z.coerce.date(),
+        updatedDate: z.coerce.date().optional(),
+        description: z.string(),
+        image: image(),
+        imageAlt: z.string(),
+        draft: z.boolean().default(false),
+        tags: z.array(z.enum(BLOG_TAGS)).default([]),
+        author: z.string().default('Digital Piggy Bank Team'),
+      })
+      .passthrough(),
 });
 
 export const collections = { blog };

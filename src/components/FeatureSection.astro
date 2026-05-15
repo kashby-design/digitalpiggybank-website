@@ -1,8 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 interface Props {
   title: string;
   description: string;
-  image: string;
+  image: ImageMetadata;
   imageAlt: string;
   reverse?: boolean;
 }
@@ -13,7 +16,15 @@ const { title, description, image, imageAlt, reverse = false } = Astro.props;
 <section class:list={['feature section', { 'feature--reverse': reverse }]}>
   <div class="feature__inner container">
     <div class="feature__image" data-reveal={reverse ? 'slide-right' : 'slide-left'}>
-      <img src={image} alt={imageAlt} width="400" height="400" loading="lazy" />
+      <Image
+        src={image}
+        alt={imageAlt}
+        widths={[300, 500, 800]}
+        sizes="(max-width: 480px) 100vw, 400px"
+        format="avif"
+        quality={75}
+        loading="lazy"
+      />
     </div>
     <div class="feature__text" data-reveal={reverse ? 'slide-left' : 'slide-right'}>
       <h2>{title}</h2>

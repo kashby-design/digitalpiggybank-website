@@ -2,7 +2,7 @@
 title: "Piggy Banks to Goals: Simple Saving Tips for Kids"
 date: 2026-02-04
 description: "Practical tips and strategies to help kids ages 5-12 learn to save money, set goals, and build smart financial habits."
-image: "/images/blog/piggy-banks-to-goals.jpg"
+image: "../../images/blog/piggy-banks-to-goals.jpg"
 imageAlt: "Saving jars labeled for different goals"
 tags:
   - saving

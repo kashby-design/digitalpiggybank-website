@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import AppStoreButtons from './AppStoreButtons.astro';
+import phoneImages from '../images/phone-images.png';
 ---
 
 <section class="cta">
@@ -9,11 +11,13 @@ import AppStoreButtons from './AppStoreButtons.astro';
       <AppStoreButtons />
     </div>
     <div class="cta__image" data-reveal="fade-up">
-      <img
-        src="/images/phone-images.png"
+      <Image
+        src={phoneImages}
         alt="3 phones with different screens from the Digital Piggy Bank app"
-        width="500"
-        height="400"
+        widths={[400, 600, 900]}
+        sizes="(max-width: 480px) 100vw, 500px"
+        format="avif"
+        quality={75}
         loading="lazy"
       />
     </div>
