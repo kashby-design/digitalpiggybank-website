@@ -1,0 +1,445 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AppStoreButtons from '../../components/AppStoreButtons.astro';
+import { breadcrumbList } from '../../lib/schema';
+
+const SITE = 'https://digitalpiggybank.com';
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The Age-by-Age Guide to Allowance and Chores (Ages 4–12)',
+  description:
+    'A complete pillar guide to teaching kids about money — chores, allowance amounts, save / spend / give systems, and digital tools, broken down by age from 4 to 12.',
+  datePublished: '2026-05-15T00:00:00.000Z',
+  dateModified: '2026-05-15T00:00:00.000Z',
+  author: {
+    '@type': 'Organization',
+    name: 'Digital Piggy Bank',
+    url: SITE,
+  },
+  publisher: { '@id': `${SITE}/#organization` },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `${SITE}/guides/allowance-and-chores-by-age`,
+  },
+};
+
+const breadcrumbSchema = breadcrumbList([
+  { name: 'Home', url: `${SITE}/` },
+  { name: 'Guides', url: `${SITE}/guides/allowance-and-chores-by-age` },
+  { name: 'Allowance & Chores by Age', url: `${SITE}/guides/allowance-and-chores-by-age` },
+]);
+---
+
+<BaseLayout
+  title="Age-by-Age Allowance & Chores Guide (Ages 4–12)"
+  description="The complete pillar guide to teaching kids about money — chores, allowance amounts, and a save / spend / give system, broken down by age from 4 to 12."
+  extraSchema={[articleSchema, breadcrumbSchema]}
+>
+  <article class="guide">
+    <header class="guide__hero">
+      <div class="container">
+        <p class="guide__eyebrow"><a href="/">Home</a> · Guides</p>
+        <h1>The age-by-age guide to allowance and chores</h1>
+        <p class="guide__lead">
+          A complete pillar guide for parents of kids 4–12. What chores fit at what age, how
+          much allowance is reasonable, when to introduce save / spend / give, and when to
+          switch from cash to a digital tool. Everything in one place, with links to deeper
+          posts on each topic.
+        </p>
+        <nav class="guide__toc" aria-label="Table of contents">
+          <p>On this page:</p>
+          <ol>
+            <li><a href="#mindset">The mindset shift</a></li>
+            <li><a href="#ages-4-5">Ages 4–5: introducing money</a></li>
+            <li><a href="#ages-6-7">Ages 6–7: real responsibility</a></li>
+            <li><a href="#ages-8-9">Ages 8–9: chore-pay systems</a></li>
+            <li><a href="#ages-10-12">Ages 10–12: small-job structure</a></li>
+            <li><a href="#tools">Tools by age</a></li>
+            <li><a href="#mistakes">Common mistakes</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <div class="guide__body container">
+      <section id="mindset" class="guide__section">
+        <h2>The mindset shift before you start</h2>
+        <p>
+          Most parents approach allowance and chores like a logistics problem: how much, how
+          often, what list. The structure matters, but the mindset matters more.
+        </p>
+        <p>Money lessons for kids ages 4–12 are really lessons about three things:</p>
+        <ul>
+          <li><strong>Contribution.</strong> They're part of a family that shares effort. Some work is unpaid because being part of a family means showing up.</li>
+          <li><strong>Cause and effect.</strong> Effort produces outcomes. Some outcomes are money. Some outcomes are a clean room.</li>
+          <li><strong>Choice.</strong> Money has more than one job — save, spend, give. Picking what it's for is the lesson.</li>
+        </ul>
+        <p>
+          Every system below works only if those three lessons are showing through. For more
+          on why this matters, see
+          <a href="/blog/kids-watching-your-wallet">Your Kids Are Watching Your Wallet</a>
+          and <a href="/blog/no-free-lunch">No Free Lunch</a>.
+        </p>
+      </section>
+
+      <section id="ages-4-5" class="guide__section">
+        <h2>Ages 4–5: introducing money and the idea of contribution</h2>
+        <p>
+          At this age, money is mostly abstract. The goal isn't financial literacy — it's
+          getting the *pattern* started. Tiny chores, a tiny bit of money, three jars.
+        </p>
+        <h3>Chores that fit</h3>
+        <ul>
+          <li>Setting the table for meals</li>
+          <li>Putting toys away after playtime</li>
+          <li>Feeding a pet at a fixed time</li>
+          <li>Putting clean clothes in drawers</li>
+          <li>Watering houseplants once a week</li>
+        </ul>
+        <h3>Allowance</h3>
+        <p>
+          Optional at this age. If you do start, keep it small — $1 or $2 a week. The
+          amount isn't the point. The ritual is.
+        </p>
+        <h3>System</h3>
+        <p>
+          Three jars labeled SAVE, SPEND, GIVE. Coins or small bills they can physically
+          move between jars. Full setup in
+          <a href="/blog/save-spend-give-jars-for-kids">Save, Spend, Give Jars: A Simple System That Actually Sticks</a>.
+        </p>
+      </section>
+
+      <section id="ages-6-7" class="guide__section">
+        <h2>Ages 6–7: real responsibility, real allowance</h2>
+        <p>
+          This is the age where most experts say a real allowance system starts to make
+          sense. Kids can handle ownership of specific tasks, and money becomes concrete
+          enough to teach with.
+        </p>
+        <h3>Chores that fit</h3>
+        <ul>
+          <li>Making their own bed every morning</li>
+          <li>Sorting laundry into lights and darks</li>
+          <li>Sweeping the kitchen or entry</li>
+          <li>Packing their own school lunch</li>
+          <li>Unloading the dishwasher</li>
+        </ul>
+        <h3>Allowance</h3>
+        <p>
+          A common starting guideline: <strong>$1 per year of age per week</strong>. A
+          7-year-old gets $7. Adjust to your family's budget.
+        </p>
+        <h3>System</h3>
+        <p>
+          Three jars still works, but this is when families often add a real save goal
+          — a Lego set, a bike, something the kid actually wants. Visible progress turns
+          saving from "waiting" into "winning slowly." See
+          <a href="/blog/piggy-banks-to-goals-simple-saving-tips-for-kids">Piggy Banks to Goals</a>.
+        </p>
+      </section>
+
+      <section id="ages-8-9" class="guide__section">
+        <h2>Ages 8–9: chore-pay systems hit their stride</h2>
+        <p>
+          This is the sweet spot for tying chores to pay. Old enough to handle real
+          responsibility, young enough to still be motivated by money, not yet in the
+          eye-roll phase of adolescence.
+        </p>
+        <h3>Chores that fit</h3>
+        <ul>
+          <li>Vacuuming a room or hallway</li>
+          <li>Loading and starting the dishwasher</li>
+          <li>Folding and putting away their own laundry</li>
+          <li>Walking the dog on a schedule</li>
+          <li>Helping mow the lawn (supervised)</li>
+        </ul>
+        <h3>Allowance</h3>
+        <p>
+          $8–$10 a week is reasonable. This is when many families switch from a flat
+          stipend to a <strong>hybrid model</strong>: a small base for being part of the
+          family plus opportunities to earn extra. See
+          <a href="/blog/weekly-vs-gig-allowance">Weekly vs Gig Allowance</a>.
+        </p>
+        <h3>System</h3>
+        <p>
+          Split the chore list: <strong>family chores (unpaid)</strong> for the basics, and
+          <strong>earning chores (paid)</strong> for the harder optional jobs. Full breakdown in
+          <a href="/blog/chores-for-cash">Chores for Cash</a>.
+        </p>
+      </section>
+
+      <section id="ages-10-12" class="guide__section">
+        <h2>Ages 10–12: small-job structure and bigger consequences</h2>
+        <p>
+          By 10, kids can handle work that meaningfully reduces your load — and the
+          consequences when it doesn't get done. Tweens respond well to a small-job
+          structure: clear list, clear payday, clear rules for missed work.
+        </p>
+        <h3>Chores that fit</h3>
+        <ul>
+          <li>Mowing the lawn on a regular schedule</li>
+          <li>Deep-cleaning a bathroom (mirror, sink, toilet, floor)</li>
+          <li>Cooking a simple weeknight meal once a week</li>
+          <li>Watching younger siblings for short stretches</li>
+          <li>Doing their own laundry start to finish</li>
+        </ul>
+        <h3>Allowance</h3>
+        <p>
+          $10–$15 a week, with real money for real work. Set a weekly payday and stick to
+          it. Decide in advance what happens if a job isn't done — pay docked, redo, or
+          lost privilege.
+        </p>
+        <h3>System</h3>
+        <p>
+          This is also the age where physical jars start to break. Bigger save goals,
+          mixed income sources (allowance + gift money + Venmo), and digital spending
+          (in-game purchases) all push the system beyond what coins in a jar can track.
+          See <a href="/blog/cash-vs-digital-vs-debit-for-kids">Cash vs Digital Piggy Bank vs Debit Card</a>
+          for the next step.
+        </p>
+      </section>
+
+      <section id="tools" class="guide__section">
+        <h2>Tools by age</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Age range</th>
+              <th>Best tool</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4–7</td>
+              <td>Cash + 3 jars</td>
+              <td>Tactile, concrete, builds the pattern</td>
+            </tr>
+            <tr>
+              <td>7–10</td>
+              <td>Digital piggy bank app</td>
+              <td>Visible save goals, no per-kid fees, no card to manage</td>
+            </tr>
+            <tr>
+              <td>10–12</td>
+              <td>Digital piggy bank + some cash</td>
+              <td>Tracks the bigger picture, handles digital spending</td>
+            </tr>
+            <tr>
+              <td>13+</td>
+              <td>Add a real debit card</td>
+              <td>Real-world card mechanics on top of habits already built</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          The mistake most families make isn't picking the wrong tool — it's picking
+          <em>only one</em> and trying to make it work forever. Match the tool to the age,
+          and switch when the kid outgrows it. Honest comparison in our
+          <a href="/vs/allowance-apps">allowance app comparison</a>.
+        </p>
+      </section>
+
+      <section id="mistakes" class="guide__section">
+        <h2>Common mistakes to avoid (at every age)</h2>
+        <ul>
+          <li>
+            <strong>Inconsistency.</strong> Allowance systems die in week 4 because the
+            parent forgot to pay. Set a recurring reminder. Pay even when the amount is
+            small.
+          </li>
+          <li>
+            <strong>Paying for everything.</strong> If every task earns money, kids miss
+            the lesson that some work is just part of being a family.
+          </li>
+          <li>
+            <strong>Skipping the give jar.</strong> Even small kids understand giving when
+            it's tied to a specific person or pet. Don't wait until they're "old enough."
+          </li>
+          <li>
+            <strong>Lecturing about spending.</strong> Spending on the wrong thing is also
+            a lesson — sometimes the most important one. Use the 24-hour rule, not a speech.
+          </li>
+          <li>
+            <strong>Treating the goal as optional.</strong> A save jar with no specific
+            goal becomes a "money jar" within a month. Name the goal. Make it visible.
+          </li>
+        </ul>
+      </section>
+
+      <section class="guide__cta">
+        <h2>Where to go next</h2>
+        <p>
+          If you're ready to start a system this week, the
+          <a href="/blog/set-up-allowance-in-7-days">7-day setup guide</a> walks you through
+          the whole process day by day. If you're trying to teach the underlying habits
+          first, start with the
+          <a href="/blog/save-spend-give-jars-for-kids">save / spend / give system</a>.
+        </p>
+        <p>
+          Or, if you want a tool that handles the tracking so you can focus on the
+          conversations:
+        </p>
+        <AppStoreButtons />
+        <p class="guide__cta-links">
+          <a href="/features">See every feature</a>
+          <span aria-hidden="true">·</span>
+          <a href="/pricing">$7.99 / year — see pricing</a>
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .guide__hero {
+    padding: 56px 0 24px;
+    background: #f8f8fa;
+  }
+
+  .guide__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .guide__eyebrow a {
+    color: var(--color-magenta);
+  }
+
+  .guide__hero h1 {
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+    max-width: 800px;
+  }
+
+  .guide__lead {
+    max-width: 720px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  .guide__toc {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    max-width: 480px;
+  }
+
+  .guide__toc p {
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .guide__toc ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .guide__toc li {
+    margin-bottom: 4px;
+  }
+
+  .guide__toc a {
+    color: var(--color-magenta);
+  }
+
+  .guide__body {
+    max-width: 780px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+
+  .guide__section {
+    margin-bottom: 56px;
+    scroll-margin-top: 80px;
+  }
+
+  .guide__section h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 0 0 16px;
+  }
+
+  .guide__section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin: 24px 0 8px;
+  }
+
+  .guide__section p {
+    line-height: 1.75;
+    color: var(--color-text);
+    margin-bottom: 16px;
+  }
+
+  .guide__section ul {
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .guide__section li {
+    margin-bottom: 6px;
+  }
+
+  .guide__section a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+  }
+
+  .guide__section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 28px;
+    font-size: 0.95rem;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .guide__section thead th {
+    background: #f8f8fa;
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .guide__section tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+
+  .guide__section tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .guide__cta {
+    margin-top: 64px;
+    padding: 40px;
+    background: #fdf2fd;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .guide__cta h2 {
+    margin-bottom: 16px;
+  }
+
+  .guide__cta-links {
+    margin-top: 24px;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  .guide__cta-links a {
+    color: var(--color-magenta);
+    margin: 0 8px;
+  }
+</style>
