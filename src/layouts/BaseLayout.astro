@@ -2,20 +2,25 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import { organization, website } from '../lib/schema';
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
+  extraSchema?: unknown[];
 }
 
 const {
   title,
   description = 'A digital piggy bank for parents of kids 4–12, because nobody carries cash anymore.',
   image = '/images/App-Icon.svg',
+  extraSchema = [],
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const baseSchema = [organization(), website()];
+const allSchema = [...baseSchema, ...extraSchema];
 ---
 
 <!doctype html>
@@ -41,6 +46,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(image, Astro.site)} />
+
+    <!-- Structured Data -->
+    {allSchema.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

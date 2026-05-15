@@ -6,7 +6,7 @@ image: "/images/blog/chores-for-cash.jpg"
 imageAlt: "Kids helping with household chores"
 ---
 
-### A Smart Allowance Guide for Teaching Kids the Value of Money
+## A Smart Allowance Guide for Teaching Kids the Value of Money
 
 If allowance feels like a weekly argument in your house, you're not failing as a parent -- you're just missing a system.
 
@@ -20,7 +20,7 @@ How do you teach responsibility without turning every task into a negotiation?
 
 The good news: linking chores to allowance *can* work -- when it's done intentionally.
 
-### Why Allowance Feels So Hard for Parents
+## Why Allowance Feels So Hard for Parents
 
 Allowance usually starts with good intentions. We want our kids to:
 
@@ -38,7 +38,7 @@ Parents end up saying things like, *"Didn't I already give you money for that?"*
 
 When kids don't see a clear connection between effort and reward, money feels abstract -- and abstract lessons rarely stick.
 
-### Should Kids Get Paid for Chores?
+## Should Kids Get Paid for Chores?
 
 This question sparks strong opinions, but most experts (and experienced parents) land somewhere in the middle.
 
@@ -56,27 +56,27 @@ When kids earn money through work, they start to understand a powerful idea:
 
 Research on children's financial attitudes shows that kids who associate money with effort tend to value it more and manage it more thoughtfully later on.
 
-### How Chores for Cash Teaches Real-World Skills
+## How Chores for Cash Teaches Real-World Skills
 
 Paying kids for certain chores isn't about turning childhood into a job. It's about teaching lessons that don't come from lectures.
 
-#### Effort -> Reward
+### Effort -> Reward
 
 When kids earn money, they learn that income doesn't appear magically. It's connected to showing up and following through.
 
-#### Delayed Gratification
+### Delayed Gratification
 
 Classic research like the Stanford Marshmallow Experiment highlights how learning to wait -- and plan -- affects long-term outcomes. When kids earn money, they practice deciding whether to spend now or save for later.
 
-#### Confidence and Ownership
+### Confidence and Ownership
 
 There's something powerful about a child saying, *"I earned this."* Even small amounts build confidence and pride.
 
-### How to Set Up a Simple Chores-for-Cash System
+## How to Set Up a Simple Chores-for-Cash System
 
 This doesn't need to be complicated. Simple is better -- especially at the beginning.
 
-#### Step 1: Separate "Family Chores" from "Earning Chores"
+### Step 1: Separate "Family Chores" from "Earning Chores"
 
 **Family chores (no pay):**
 
@@ -95,7 +95,7 @@ This doesn't need to be complicated. Simple is better -- especially at the begin
 
 This keeps responsibility intact *and* creates earning opportunities.
 
-#### Step 2: Choose an Allowance Structure
+### Step 2: Choose an Allowance Structure
 
 There's no one right answer, but here are two common options:
 
@@ -109,7 +109,7 @@ Each chore has a value, and kids earn based on what they complete.
 
 A common guideline is **$1 per year of age per week**, but consistency matters more than the dollar amount. I prefer the Per-Chore Pay method. We have a list of chores our kids complete before they can do anything after school. Then we have a list of chores that earn them extra money.
 
-#### Step 3: Make Expectations Crystal Clear
+### Step 3: Make Expectations Crystal Clear
 
 Most allowance fights come from unclear rules.
 
@@ -121,7 +121,7 @@ Be specific about:
 
 When expectations are clear, emotions stay low.
 
-### Teaching Save, Spend, and Give (Not Just Earn)
+## Teaching Save, Spend, and Give (Not Just Earn)
 
 Earning money is only part of the lesson. What kids do *with* their money is where financial literacy really begins.
 
@@ -135,7 +135,7 @@ Studies show that kids who learn to give early often develop a healthier relatio
 
 The key is visibility. Kids learn best when they can *see* where their money goes.
 
-### Common Allowance Mistakes to Avoid
+## Common Allowance Mistakes to Avoid
 
 **Paying for everything**
 
@@ -149,7 +149,7 @@ Inconsistency creates confusion -- and resentment.
 
 This leads to "I thought you already paid me" arguments and unnecessary tension.
 
-### Making Allowance Easier (and Less Emotional)
+## Making Allowance Easier (and Less Emotional)
 
 The best allowance systems do one thing well:
 
@@ -159,13 +159,13 @@ Instead of debating what was earned, parents can point to a clear system. Kids c
 
 That's why many families move from physical cash to a **digital piggy bank**. When kids can visualize their money -- what they've earned, saved, spent, and given -- the lessons click faster, and parents don't have to play accountant.
 
-### Parent Tip (From Real Life)
+## Parent Tip (From Real Life)
 
 Start small.
 
 Pick one or two paid chores. Set a simple weekly payday. Stick with it for a month before changing anything. Kids don't need a perfect system -- they need a consistent one.
 
-### Why This Approach Works
+## Why This Approach Works
 
 This method reflects what both research and real families show:
 
@@ -173,13 +173,19 @@ Kids learn money best when lessons are concrete, visual, and tied to effort & va
 
 You're not just managing allowance -- you're teaching skills your kids will use for decades.
 
-### A Gentle Next Step
+## A Gentle Next Step
 
 If you're already linking chores to allowance, the next step is making money visible and easy to track. A simple digital piggy bank can help kids see their progress and help parents stay consistent -- without turning allowance into another mental load.
 
 Small habits now lead to confident money skills later.
 
-#### Sources & Further Reading
+### Keep reading
+
+- [No Free Lunch: How Chore Earnings Teach Real Value](/blog/no-free-lunch)
+- [Best Age to Start Chores](/blog/best-age-start-chores)
+- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
+
+### Sources & Further Reading
 
 - LeBaron, D., & Black, A. (BYU). *How household chores shape children's financial attitudes.* https://lebaron-black.byu.edu/money-and-laundering-how-household-chores-shape-childrens-financial-attitudes
 - University of Arizona News. *Why parents should teach kids to give.* https://news.arizona.edu/news/why-parents-should-teach-kids-give

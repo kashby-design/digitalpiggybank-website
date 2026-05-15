@@ -7,9 +7,13 @@ import Pricing from '../components/Pricing.astro';
 import CtaSection from '../components/CtaSection.astro';
 import Roadmap from '../components/Roadmap.astro';
 import Faq from '../components/Faq.astro';
+import { mobileApplication } from '../lib/schema';
 ---
 
-<BaseLayout title="Digital Piggy Bank – Track Allowances Without Breaking the Bank">
+<BaseLayout
+  title="Digital Piggy Bank — Allowance & Chore Tracker for Parents"
+  extraSchema={[mobileApplication()]}
+>
   <Hero />
 
   <FeatureSection
