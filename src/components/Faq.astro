@@ -1,78 +1,175 @@
 ---
 import { faqPage } from '../lib/schema';
 
-const faqs = [
+type FaqItem = {
+  question: string;
+  answer?: string | null;
+  bullets?: string[];
+  answerHtml?: string;
+};
+
+type FaqSection = {
+  id: string;
+  title: string;
+  items: FaqItem[];
+};
+
+const sections: FaqSection[] = [
   {
-    number: '/images/01.svg',
-    question: "What if I don't want my kids to have phones?",
-    answer: "No phone for the kids? No problem! All actions happen on the parent's phone, so you're in complete control of their digital piggy bank.",
-  },
-  {
-    number: '/images/02.svg',
-    question: 'How are my children ever going to see their amount?',
-    answer: "Right now, they would have to ask their parents to know how much they have, but in the next version we will release a kids login that they could put on their phone.",
-  },
-  {
-    number: '/images/03.svg',
-    question: 'Why is this better than a piggy bank?',
-    answer: null,
-    bullets: [
-      "With our app, your kids' money is always just a tap away! Whether you're at the store and they want to know if they can afford a new toy, there's no need to run home to check the piggy bank—just use your card and update their balance in the app!",
-      "Plus, whenever they earn money from chores or birthday gifts, you can add it right away, and they'll see their savings grow without breaking open the piggy bank to count those coins.",
-      "Eww money",
+    id: 'product',
+    title: 'About the app',
+    items: [
+      {
+        question: "What if I don't want my kids to have phones?",
+        answer:
+          "No phone for the kids? No problem! All actions happen on the parent's phone, so you're in complete control of their digital piggy bank.",
+      },
+      {
+        question: 'How are my children ever going to see their amount?',
+        answer:
+          'Right now, they would have to ask their parents to know how much they have, but in the next version we will release a kids login that they could put on their phone.',
+      },
+      {
+        question: 'Why is this better than a piggy bank?',
+        bullets: [
+          "With our app, your kids' money is always just a tap away! Whether you're at the store and they want to know if they can afford a new toy, there's no need to run home to check the piggy bank—just use your card and update their balance in the app!",
+          "Plus, whenever they earn money from chores or birthday gifts, you can add it right away, and they'll see their savings grow without breaking open the piggy bank to count those coins.",
+          'Eww money',
+        ],
+      },
     ],
   },
   {
-    number: '/images/04.svg',
-    question: 'Is there a cost?',
-    answer: "When you download the app, you get a 14 day free trial, and only pay $7.99/year (That's less than .70¢/month) or $1.00/month.",
+    id: 'pricing',
+    title: 'Pricing',
+    items: [
+      {
+        question: 'Do you charge per kid?',
+        answer: 'No. One subscription covers every child in your family.',
+      },
+      {
+        question: 'Is there a free trial?',
+        answer:
+          'Yes — every account gets a 14-day free trial. You can cancel before it ends and pay nothing.',
+      },
+      {
+        question: 'How does cancellation work?',
+        answer:
+          "You can cancel anytime through the App Store or Google Play subscription settings. We don't store payment details.",
+      },
+      {
+        question: 'Why is it so much cheaper than the other apps?',
+        answer:
+          "We don't issue debit cards, manage real bank accounts, or run an investment platform. That keeps our costs low — and lets us pass the savings on to you.",
+      },
+    ],
+  },
+  {
+    id: 'ages-devices',
+    title: 'Ages & devices',
+    items: [
+      {
+        question: 'What ages is Digital Piggy Bank for?',
+        answer:
+          "Built for kids roughly 4–12 — the pre-bank-account, pre-debit-card years when money is mostly something parents give. There's no strict minimum or maximum; any age works as long as a parent is tracking the balance.",
+      },
+      {
+        question: 'What devices does it run on?',
+        answerHtml:
+          'iPhone, iPad, and Android phones and tablets. Download on the <a href="https://apps.apple.com/us/app/digital-piggy-bank/id6736767040" target="_blank" rel="noopener noreferrer">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.piggybankapp" target="_blank" rel="noopener noreferrer">Google Play</a>.',
+      },
+    ],
+  },
+  {
+    id: 'privacy',
+    title: 'Privacy & security',
+    items: [
+      {
+        question: "Is my child's data private?",
+        answer:
+          "Yes. We don't sell or share your data. We only store what's needed to run the app — your account email, your kids' first names, and balances. No real banking data, no debit cards, and no third-party trackers in the app.",
+      },
+    ],
+  },
+  {
+    id: 'comparison',
+    title: 'Comparing apps',
+    items: [
+      {
+        question: 'How is this different from Greenlight, GoHenry, BusyKid, or FamZoo?',
+        answerHtml:
+          'Most allowance apps are debit-card products with a banking backend, charged per kid per month ($4–$6+). Digital Piggy Bank is a parent-side ledger — no card, no bank account, one flat $7.99/year for the whole family. See the <a href="/vs/allowance-apps">side-by-side comparison</a>.',
+      },
+    ],
   },
 ];
+
+const allItems = sections.flatMap((s) =>
+  s.items.map((item) => ({
+    question: item.question,
+    answer: item.answer ?? null,
+    bullets: item.bullets,
+  })),
+);
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(faqPage(faqs))} />
+<script type="application/ld+json" set:html={JSON.stringify(faqPage(allItems))} />
 
 <section id="faq" class="faq section">
   <div class="container">
-    <h2 class="text-center" data-reveal="fade-up">FAQ</h2>
-    <div class="faq__list">
-      {faqs.map((faq) => (
-        <details class="faq__item" data-reveal="fade-up">
-          <summary class="faq__question">
-            <img src={faq.number} alt="" width="48" height="48" aria-hidden="true" />
-            <h3>{faq.question}</h3>
-            <span class="faq__icon" aria-hidden="true">+</span>
-          </summary>
-          <div class="faq__answer">
-            <div class="faq__answer-inner">
-              {faq.answer && <p>{faq.answer}</p>}
-              {faq.bullets && (
-                <ul>
-                  {faq.bullets.map((bullet) => (
-                    <li>{bullet}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          </div>
-        </details>
-      ))}
-    </div>
+    {sections.map((section) => (
+      <div id={section.id} class="faq__section">
+        <h2 class="faq__section-title" data-reveal="fade-up">{section.title}</h2>
+        <div class="faq__list">
+          {section.items.map((item) => (
+            <details class="faq__item" data-reveal="fade-up">
+              <summary class="faq__question">
+                <h3>{item.question}</h3>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <div class="faq__answer-inner">
+                  {item.answer && <p>{item.answer}</p>}
+                  {item.answerHtml && <p set:html={item.answerHtml} />}
+                  {item.bullets && (
+                    <ul>
+                      {item.bullets.map((bullet) => (
+                        <li>{bullet}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    ))}
   </div>
 </section>
 
 <style>
   .faq {
     background: #EDF2F7;
+    scroll-margin-top: 88px;
   }
 
-  .faq h2 {
-    margin-bottom: 56px;
+  .faq__section {
+    max-width: 800px;
+    margin: 0 auto;
+    scroll-margin-top: 88px;
+  }
+
+  .faq__section + .faq__section {
+    margin-top: 56px;
+  }
+
+  .faq__section-title {
+    margin-bottom: 24px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
   }
 
   .faq__list {
-    max-width: 800px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -82,13 +179,14 @@ const faqs = [
     border: 1px solid var(--color-border);
     border-radius: 16px;
     overflow: hidden;
+    background: var(--color-white);
   }
 
   .faq__question {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 28px 24px;
+    padding: 20px 24px;
     cursor: pointer;
     list-style: none;
   }
@@ -97,15 +195,9 @@ const faqs = [
     display: none;
   }
 
-  .faq__question img {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-  }
-
   .faq__question h3 {
     flex: 1;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
   }
 
   .faq__icon {
@@ -122,22 +214,24 @@ const faqs = [
 
   /* Animate answer on open */
   .faq__answer {
-    padding: 0 28px 0 96px;
+    padding: 0 24px;
     color: var(--color-text-light);
     line-height: 1.8;
   }
 
+  .faq__answer a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+  }
+
   .faq__item[open] .faq__answer {
-    padding-bottom: 28px;
+    padding-bottom: 24px;
     animation: faq-open 300ms ease-out;
   }
 
   @keyframes faq-open {
     from { opacity: 0; transform: translateY(-8px); }
     to { opacity: 1; transform: none; }
-  }
-
-  .faq__answer-inner {
   }
 
   .faq__answer-inner ul {
@@ -160,17 +254,12 @@ const faqs = [
 
   @media (max-width: 809px) {
     .faq__question {
-      padding: 20px 16px;
+      padding: 16px;
       gap: 12px;
     }
 
-    .faq__question img {
-      width: 36px;
-      height: 36px;
-    }
-
     .faq__answer {
-      padding-left: 24px;
+      padding-left: 16px;
       padding-right: 16px;
     }
   }

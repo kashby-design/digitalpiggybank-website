@@ -134,9 +134,4 @@ Today. Whatever age your kid is, there's a chore they're ready for. The goal isn
 
 A 3-year-old who puts toys away. A 7-year-old who packs their own lunch. An 11-year-old who does Saturday yard work for $5. That's how you raise a teenager who can take care of themselves, and an adult who isn't shocked the first time they have to clean their own bathroom.
 
-### Keep reading
-
-- [Chores for Cash](/blog/chores-for-cash)
-- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
-- [How Much Allowance Should You Give?](/blog/pay-for-allowance)
 - [No Free Lunch: How Chore Earnings Teach Real Value](/blog/no-free-lunch)

@@ -100,9 +100,3 @@ A kid who's done this from age 6 to 12 has done it maybe 20-30 times. By the tim
 That's the whole goal. You're not optimizing one birthday. You're building a reflex they'll carry into their first paycheck, their first tax refund, their first windfall as an adult.
 
 The gift money playbook isn't really about birthdays. It's about not letting *any* money show up without a plan.
-
-### Keep reading
-
-- [Save, Spend, Give Jars: A Simple System That Actually Sticks](/blog/save-spend-give-jars-for-kids)
-- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
-- [Piggy Banks to Goals: Simple Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)

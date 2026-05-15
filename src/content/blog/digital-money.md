@@ -69,9 +69,3 @@ He didn't buy the skin. Not because I told him no, but because he saw the tradeo
 ## Start Small, Build Confidence
 
 You don't need to overhaul your family's financial education overnight. Pick one of these strategies and start this week. Walk through a transaction. Have the conversation about how apps are designed to get them to spend. Set a 24 hour rule.
-
-### Keep reading
-
-- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
-- [Your Kids Are Watching Your Wallet](/blog/kids-watching-your-wallet)
-- [How to Help Your Kid See Through Ads](/blog/help-your-kid-see-through-ads)

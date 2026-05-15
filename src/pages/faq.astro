@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+import { breadcrumbList } from '../lib/schema';
+
+const SITE = 'https://digitalpiggybank.com';
+---
+
+<BaseLayout
+  title="FAQ — Digital Piggy Bank"
+  description="Answers to common questions about Digital Piggy Bank: phones for kids, how kids see their balance, pricing, and how it compares to a real piggy bank."
+  extraSchema={[
+    breadcrumbList([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'FAQ', url: `${SITE}/faq` },
+    ]),
+  ]}
+>
+  <section class="faq-hero section">
+    <div class="container">
+      <p class="faq-hero__eyebrow">FAQ</p>
+      <h1>Common questions, straight answers.</h1>
+      <p class="faq-hero__lead">
+        Everything parents ask before they download — pricing, kid access, and
+        why a ledger app beats a porcelain pig.
+      </p>
+      <nav class="faq-hero__nav" aria-label="FAQ sections">
+        <a href="#product">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#ages-devices">Ages &amp; devices</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#comparison">Comparing apps</a>
+      </nav>
+    </div>
+  </section>
+
+  <Faq />
+</BaseLayout>
+
+<style>
+  .faq-hero {
+    text-align: center;
+    padding: 56px 0 24px;
+  }
+
+  .faq-hero__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .faq-hero h1 {
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+  }
+
+  .faq-hero__lead {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .faq-hero__nav {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    font-size: 0.95rem;
+  }
+
+  .faq-hero__nav a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+  }
+
+  .faq-hero__nav a:hover {
+    color: var(--color-pink);
+  }
+</style>

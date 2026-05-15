@@ -117,9 +117,3 @@ Most allowance systems die in week 4 not because the design is wrong, but becaus
 Set a recurring reminder on your phone. Pay even when the amount is small. Pay even when the chores were imperfect. Consistency, not perfection, is what makes the lesson land.
 
 Seven days from now, you'll be set up. A month from now, you'll have a working system. A year from now, your kid will know more about money than most of their peers — and you'll wonder why you didn't start sooner.
-
-### Keep reading
-
-- [How Much Allowance Should You Give Your Child?](/blog/pay-for-allowance)
-- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
-- [Save, Spend, Give Jars: A Simple System That Actually Sticks](/blog/save-spend-give-jars-for-kids)

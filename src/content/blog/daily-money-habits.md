@@ -76,9 +76,3 @@ That's where a tool like [Digital Piggy Bank](https://digitalpiggybank.com) fits
 ## Start small. Start today.
 
 You don't need a perfect system. You need five minutes today. Pick one habit from the list above. Try it for a week. Then add another.
-
-### Keep reading
-
-- [When Money Is Invisible: Teaching Kids About Digital Payments](/blog/digital-money)
-- [Your Kids Are Watching Your Wallet](/blog/kids-watching-your-wallet)
-- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)

@@ -182,12 +182,6 @@ If you're already linking chores to allowance, the next step is making money vis
 
 Small habits now lead to confident money skills later.
 
-### Keep reading
-
-- [No Free Lunch: How Chore Earnings Teach Real Value](/blog/no-free-lunch)
-- [Best Age to Start Chores](/blog/best-age-start-chores)
-- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
-
 ### Sources & Further Reading
 
 - LeBaron, D., & Black, A. (BYU). *How household chores shape children's financial attitudes.* https://lebaron-black.byu.edu/money-and-laundering-how-household-chores-shape-childrens-financial-attitudes

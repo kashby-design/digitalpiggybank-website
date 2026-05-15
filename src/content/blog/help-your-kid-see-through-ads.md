@@ -82,9 +82,3 @@ You don't need a curriculum or a weekend seminar. Start with one conversation du
 These small moments add up to a kid who thinks before they buy. And that's a skill worth more than anything an ad is selling.
 
 source: https://www.financialeducatorscouncil.org/stop-advertising-to-kids/
-
-### Keep reading
-
-- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
-- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
-- [Your Kids Are Watching Your Wallet](/blog/kids-watching-your-wallet)

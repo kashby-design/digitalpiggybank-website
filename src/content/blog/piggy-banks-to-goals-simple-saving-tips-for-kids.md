@@ -107,12 +107,6 @@ Weekly or bi-weekly check-ins keep saving top of mind without turning it into a 
 
 One parent shared that her 7-year-old stopped asking for impulse toys once he could see his savings progress. He started saying things like, "I don't want to mess up my goal." That shift didn't come from lectures. It came from visibility and ownership.
 
-### Keep reading
-
-- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
-- [When Money Is Invisible: Teaching Kids About Digital Payments](/blog/digital-money)
-- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
-
 #### Sources & Further Reading
 
 - Collins & Odders-White, 2021 (cited in NEAFCS Journal), on allowances boosting responsibility, [https://neafcs.memberclicks.net/assets/documents/journal/2022-jneafcs/Money%20Milestones.pdf](https://neafcs.memberclicks.net/assets/documents/journal/2022-jneafcs/Money%20Milestones.pdf).

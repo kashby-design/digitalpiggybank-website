@@ -98,9 +98,3 @@ Here's what I'd tell a friend asking:
 - **Ages 13+:** Add a debit card. By now they understand value, trade-offs, and what a balance means. The card teaches the *mechanics* of digital money, on top of the values they already have.
 
 The mistake most families make isn't picking the wrong method — it's picking *only one* and trying to make it work forever. Each method has a developmental window. Match the tool to the age, and switch when the kid outgrows it.
-
-### Keep reading
-
-- [When Money Is Invisible: Teaching Kids About Digital Payments](/blog/digital-money)
-- [Save, Spend, Give Jars: A Simple System That Actually Sticks](/blog/save-spend-give-jars-for-kids)
-- [Best Age to Start Chores: An Age-by-Age Guide](/blog/best-age-start-chores)
