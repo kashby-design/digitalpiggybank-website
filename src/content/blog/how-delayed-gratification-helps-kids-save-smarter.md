@@ -2,7 +2,7 @@
 title: "How Delayed Gratification Helps Kids Save Smarter"
 date: 2026-02-24
 description: "Learn how the famous marshmallow test reveals the power of teaching kids to wait—and how you can use it to build smarter saving habits at home."
-image: "/images/blog/delayed-gratification.jpg"
+image: "../../images/blog/delayed-gratification.jpg"
 imageAlt: "A large marshmallow with two kids eyeing it while one is reaching for it"
 tags:
   - saving

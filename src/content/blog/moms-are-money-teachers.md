@@ -4,7 +4,7 @@ date: 2026-05-08
 description: "81% of moms teach kids basic money skills. Here's how to turn everyday moments into money lessons that actually stick, plus 4 easy ways to start this Mother's Day."
 primeryKeywords: "how moms teach kids about money"
 SecondaryKeywords: "mother's role in financial literacy, teaching kids money management at home, raising money-smart kids, kids financial literacy at home, money lessons for kids, mom money lessons, piggy bank app for kids"
-image: "/images/blog/moms-first-money-teachers.png"
+image: "../../images/blog/moms-first-money-teachers.png"
 imageAlt: "Mother and child counting coins together at the kitchen table"
 tags:
   - parenting-mindset

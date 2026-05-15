@@ -14,12 +14,24 @@ importers:
       '@astrojs/vercel':
         specifier: ^10.0.0
         version: 10.0.0(astro@6.0.4(@types/node@24.12.0)(@vercel/functions@3.4.3)(rollup@4.59.0))(rollup@4.59.0)
+      '@fontsource/modak':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/noto-sans':
+        specifier: ^5.2.10
+        version: 5.2.10
+      '@fontsource/orelega-one':
+        specifier: ^5.2.7
+        version: 5.2.7
       '@vercel/analytics':
         specifier: ^2.0.1
         version: 2.0.1
       astro:
         specifier: ^6.0.4
         version: 6.0.4(@types/node@24.12.0)(@vercel/functions@3.4.3)(rollup@4.59.0)
+      sharp:
+        specifier: ^0.34.5
+        version: 0.34.5
     devDependencies:
       '@playwright/test':
         specifier: ^1.60.0
@@ -237,6 +249,15 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/modak@5.2.8':
+    resolution: {integrity: sha512-aT/0YZ7L5aisHuaRvaOhMgR6RXd8h82b9nmK+cnJYKtrlvcTBNnbT20i6uy18m/VfCoxHckLF3xGJveNfR57lA==}
+
+  '@fontsource/noto-sans@5.2.10':
+    resolution: {integrity: sha512-J58RVfS/C0Z2VBF+PoU260Tx8cdRGYuS+e3yQe4hYaIYDl0sEVn5CzlLo5zVRvQD0HaIUTV8AZMfqR7rtdEpqQ==}
+
+  '@fontsource/orelega-one@5.2.7':
+    resolution: {integrity: sha512-jc+h6WkZa9WGEt+gxQnA05VFmirBy/oMAHUSUPTN3C5O7mSeRBLI6T1MXTu/+mwNorRHUzyaTaEyYQf4PePvHg==}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -1875,8 +1896,13 @@ snapshots:
   '@esbuild/win32-x64@0.27.4':
     optional: true
 
-  '@img/colour@1.1.0':
-    optional: true
+  '@fontsource/modak@5.2.8': {}
+
+  '@fontsource/noto-sans@5.2.10': {}
+
+  '@fontsource/orelega-one@5.2.7': {}
+
+  '@img/colour@1.1.0': {}
 
   '@img/sharp-darwin-arm64@0.34.5':
     optionalDependencies:
@@ -3276,7 +3302,6 @@ snapshots:
       '@img/sharp-win32-arm64': 0.34.5
       '@img/sharp-win32-ia32': 0.34.5
       '@img/sharp-win32-x64': 0.34.5
-    optional: true
 
   shiki@4.0.2:
     dependencies:

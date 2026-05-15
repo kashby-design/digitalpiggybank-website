@@ -12,8 +12,12 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.7.1",
     "@astrojs/vercel": "^10.0.0",
+    "@fontsource/modak": "^5.2.8",
+    "@fontsource/noto-sans": "^5.2.10",
+    "@fontsource/orelega-one": "^5.2.7",
     "@vercel/analytics": "^2.0.1",
-    "astro": "^6.0.4"
+    "astro": "^6.0.4",
+    "sharp": "^0.34.5"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

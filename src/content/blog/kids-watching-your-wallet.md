@@ -4,7 +4,7 @@ date: 2026-05-14
 description: "New research says your kid's money personality may not be a copy of yours. Here's how to coach the brain they were born with."
 primeryKeywords: "how parents influence kids' money habits"
 SecondaryKeywords: "teaching kids about money, kids and money psychology, spendthrift vs tightwad kids, financial habits for children, raising money smart kids, parental modeling money, kids financial behavior"
-image: "/images/blog/kids-watching-your-wallet.png"
+image: "../../images/blog/kids-watching-your-wallet.png"
 imageAlt: "Parent and child at a store checkout sharing a money moment"
 tags:
   - parenting-mindset

@@ -4,7 +4,7 @@ date: 2026-04-20
 description: "Paying kids for chores teaches money's true value better than a free allowance. Here's what 50 years of research says about chore based pay for ages 8 to 10."
 primeryKeywords: "paying kids for chores"
 SecondaryKeywords: "chore based allowance, should kids earn allowance, teaching kids money value, allowance vs chores, kids chores and money, financial literacy for 8 year olds, no free allowance"
-image: "/images/blog/no-free-lunch.png"
+image: "../../images/blog/no-free-lunch.png"
 imageAlt: "Child counting dollar bills after completing household chores"
 tags:
   - chores

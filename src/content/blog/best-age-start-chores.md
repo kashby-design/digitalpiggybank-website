@@ -2,7 +2,7 @@
 title: "Best Age to Start Chores"
 date: 2026-04-28
 description: "Wondering when to start giving your kids chores? A complete age-by-age guide to household responsibilities for children."
-image: "/images/blog/best-age-chores.jpg"
+image: "../../images/blog/best-age-chores.jpg"
 imageAlt: "Dad and daughter cleaning up blocks in their room"
 tags:
   - chores

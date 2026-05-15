@@ -2,7 +2,7 @@
 title: "When Money Is Invisible: How to Teach 11 and 12 Year Olds About Digital Payments"
 date: 2026-03-31
 description: "When money lives on a screen, kids stop seeing what it costs. Here's how to teach 11- and 12-year-olds the real value of digital payments."
-image: "/images/blog/digital-money.png"
+image: "../../images/blog/digital-money.png"
 imageAlt: "daughter is tapping an ATM machine and money is flying out magically"
 tags:
   - digital-money

@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 interface Props {
   currentSlug: string;
@@ -46,7 +47,15 @@ function formatDate(date: Date) {
       {ranked.map((p) => (
         <a class="related__card" href={`/blog/${p.id}`}>
           <div class="related__image">
-            <img src={p.data.image} alt={p.data.imageAlt} loading="lazy" width="300" height="180" />
+            <Image
+              src={p.data.image}
+              alt={p.data.imageAlt}
+              widths={[220, 440]}
+              sizes="(max-width: 480px) 100vw, 220px"
+              format="avif"
+              quality={70}
+              loading="lazy"
+            />
           </div>
           <div class="related__body">
             <p class="related__date">{formatDate(p.data.date)}</p>
