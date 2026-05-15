@@ -81,8 +81,10 @@ import AppStoreButtons from './AppStoreButtons.astro';
   .hero h1 {
     margin: 0;
     line-height: 1;
-    color: var(--color-dark);
-    text-shadow: 1px 1px 30px rgb(255 255 255 / 70%);
+    background: linear-gradient(#f682f0 13%, #cf5dc9 87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .hero__tagline {
