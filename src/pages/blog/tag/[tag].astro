@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { BLOG_TAGS, TAG_LABELS, type BlogTag } from '../../../content.config';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return BLOG_TAGS.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts
+        .filter((p) => !p.data.draft && (p.data.tags ?? []).includes(tag))
+        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+    },
+  }));
+}
+
+interface Props {
+  tag: BlogTag;
+  posts: Awaited<ReturnType<typeof getCollection<'blog'>>>;
+}
+
+const { tag, posts } = Astro.props;
+const label = TAG_LABELS[tag];
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${label} — Digital Piggy Bank Blog`,
+  url: canonical,
+  hasPart: posts.map((p) => ({
+    '@type': 'Article',
+    headline: p.data.title,
+    url: new URL(`/blog/${p.id}`, Astro.site).toString(),
+    datePublished: p.data.date.toISOString(),
+  })),
+};
+---
+
+<BaseLayout
+  title={`${label} — Digital Piggy Bank Blog`}
+  description={`Posts about ${label.toLowerCase()} on the Digital Piggy Bank blog.`}
+  extraSchema={[collectionSchema]}
+>
+  <section class="tag-hero section">
+    <div class="container">
+      <p class="tag-hero__eyebrow"><a href="/blog">Blog</a> · Tag</p>
+      <h1>{label}</h1>
+      <p class="tag-hero__count">{posts.length} post{posts.length === 1 ? '' : 's'}</p>
+    </div>
+  </section>
+
+  <section class="tag-posts section">
+    <div class="container">
+      <div class="posts-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.id}`} class="post-card">
+            <div class="post-card__image">
+              <img src={post.data.image} alt={post.data.imageAlt} width="300" height="180" loading="lazy" />
+            </div>
+            <div class="post-card__text">
+              <p class="post-card__date">{formatDate(post.data.date)}</p>
+              <h2>{post.data.title}</h2>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tag-hero {
+    padding: 48px 0 16px;
+    text-align: center;
+  }
+
+  .tag-hero__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .tag-hero__eyebrow a {
+    color: var(--color-magenta);
+  }
+
+  .tag-hero h1 {
+    font-family: var(--font-display);
+    margin-bottom: 8px;
+  }
+
+  .tag-hero__count {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .post-card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: inherit;
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-card__image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .post-card__text {
+    padding: 16px;
+  }
+
+  .post-card__date {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-bottom: 8px;
+  }
+
+  .post-card__text h2 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  @media (max-width: 480px) {
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

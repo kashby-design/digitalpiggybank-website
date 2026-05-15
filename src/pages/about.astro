@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About — Digital Piggy Bank',
+  url: new URL('/about', Astro.site).toString(),
+  description:
+    'A small team of parents building a simple way to track allowance, chores, and savings without handing kids a debit card.',
+};
+---
+
+<BaseLayout
+  title="About — Digital Piggy Bank"
+  description="A small team of parents building a simple way to track allowance, chores, and savings — no debit card, no bank account required."
+  extraSchema={[aboutSchema]}
+>
+  <section class="about section">
+    <div class="container about__inner">
+      <header class="about__header">
+        <p class="about__eyebrow">About</p>
+        <h1>Built by parents, for parents.</h1>
+        <p class="about__lead">
+          Digital Piggy Bank is a simple ledger for families. Track allowance, chore earnings,
+          spending, and saving — without opening a bank account or handing your kid a debit card.
+        </p>
+      </header>
+
+      <div class="about__body">
+        <h2>Why we built it</h2>
+        <p>
+          Nobody carries cash anymore. We watched our own kids try to learn money lessons from
+          an empty wallet and decided to fix it. The piggy bank still works — it just lives on
+          a parent's phone now.
+        </p>
+
+        <h2>How we think about money lessons</h2>
+        <p>
+          Money skills don't come from lectures. They come from small, repeatable moments —
+          earning, choosing, saving, and giving — done consistently. Our blog and our app are
+          built around that idea. If you want to see how we approach allowance, chores, saving,
+          and helping kids see through ads, start with our <a href="/blog">blog</a>, or browse
+          posts by <a href="/blog/tags">topic</a>.
+        </p>
+
+        <h2>Who's behind it</h2>
+        <p>
+          Digital Piggy Bank is run by a small team of parents who care deeply about how kids
+          learn to handle money. Got feedback? Find us on
+          <a href="https://www.instagram.com/piggybank_app/" target="_blank" rel="noopener noreferrer">Instagram</a>,
+          <a href="https://www.tiktok.com/@piggy.bank.app" target="_blank" rel="noopener noreferrer">TikTok</a>,
+          <a href="https://www.facebook.com/profile.php?id=61566121137460" target="_blank" rel="noopener noreferrer">Facebook</a>,
+          or <a href="https://x.com/dgtlpiggybank" target="_blank" rel="noopener noreferrer">X</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about {
+    padding: 64px 0 96px;
+  }
+
+  .about__inner {
+    max-width: 720px;
+  }
+
+  .about__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .about__header h1 {
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+  }
+
+  .about__lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 48px;
+  }
+
+  .about__body h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin: 40px 0 12px;
+  }
+
+  .about__body p {
+    line-height: 1.75;
+    color: var(--color-text);
+    margin-bottom: 16px;
+  }
+
+  .about__body a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+  }
+</style>

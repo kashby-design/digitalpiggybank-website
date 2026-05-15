@@ -4,6 +4,8 @@ date: 2026-05-01
 description: "A practical guide to deciding how much allowance to give your child, with age-based recommendations and tips for making it work."
 image: "/images/blog/pay-for-allowance.jpg"
 imageAlt: "A bag of money"
+tags:
+  - allowance
 ---
 
 ## How Much Allowance Should You Give Your Child?

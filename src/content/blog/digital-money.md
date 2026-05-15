@@ -4,6 +4,10 @@ date: 2026-03-31
 description: "When money lives on a screen, kids stop seeing what it costs. Here's how to teach 11- and 12-year-olds the real value of digital payments."
 image: "/images/blog/digital-money.png"
 imageAlt: "daughter is tapping an ATM machine and money is flying out magically"
+tags:
+  - digital-money
+  - saving
+  - ads-impulse
 ---
 
 Your kid watches you tap your phone at the register. No wallet. No cash. No visible exchange of anything. The groceries go in the cart, you wave your phone, and you walk out. To an 11 year old, that looks like magic. Free magic.

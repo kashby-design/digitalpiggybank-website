@@ -2,6 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { article, breadcrumbList } from '../../lib/schema';
+import AuthorByline from '../../components/AuthorByline.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
+import { TAG_LABELS, type BlogTag } from '../../content.config';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -41,7 +44,9 @@ const articleSchema = article({
   description: post.data.description,
   image: post.data.image,
   datePublished: post.data.date,
+  dateModified: post.data.updatedDate,
   url: canonicalURL,
+  authorName: post.data.author,
 });
 const breadcrumbSchema = breadcrumbList([
   { name: 'Home', url: new URL('/', Astro.site).toString() },
@@ -64,12 +69,25 @@ const breadcrumbSchema = breadcrumbList([
     <div class="blog-post__content container">
       <header class="blog-post__header">
         <h1>{post.data.title}</h1>
-        <p class="blog-post__date">{formatDate(post.data.date)}</p>
+        <AuthorByline
+          author={post.data.author}
+          date={post.data.date}
+          updatedDate={post.data.updatedDate}
+        />
+        {(post.data.tags ?? []).length > 0 && (
+          <ul class="blog-post__tags">
+            {(post.data.tags as BlogTag[]).map((t) => (
+              <li><a href={`/blog/tag/${t}`}>#{TAG_LABELS[t]}</a></li>
+            ))}
+          </ul>
+        )}
       </header>
 
       <div class="blog-post__body prose">
         <Content />
       </div>
+
+      <RelatedPosts currentSlug={post.id} tags={post.data.tags ?? []} />
 
       {nextPost && (
         <nav class="blog-post__next">
@@ -111,9 +129,29 @@ const breadcrumbSchema = breadcrumbList([
     margin-bottom: 12px;
   }
 
-  .blog-post__date {
-    color: var(--color-text-light);
-    font-size: 0.9rem;
+  .blog-post__tags {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .blog-post__tags a {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--color-border);
+    color: var(--color-text);
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .blog-post__tags a:hover {
+    background: var(--color-magenta);
+    color: var(--color-white);
   }
 
   /* Prose styles for rendered markdown */

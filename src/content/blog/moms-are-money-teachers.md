@@ -6,6 +6,8 @@ primeryKeywords: "how moms teach kids about money"
 SecondaryKeywords: "mother's role in financial literacy, teaching kids money management at home, raising money-smart kids, kids financial literacy at home, money lessons for kids, mom money lessons, piggy bank app for kids"
 image: "/images/blog/moms-first-money-teachers.png"
 imageAlt: "Mother and child counting coins together at the kitchen table"
+tags:
+  - parenting-mindset
 ---
 
 Ask a kid where money comes from and most of them will point at mom.

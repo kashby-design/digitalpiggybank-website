@@ -6,6 +6,9 @@ primeryKeywords: "paying kids for chores"
 SecondaryKeywords: "chore based allowance, should kids earn allowance, teaching kids money value, allowance vs chores, kids chores and money, financial literacy for 8 year olds, no free allowance"
 image: "/images/blog/no-free-lunch.png"
 imageAlt: "Child counting dollar bills after completing household chores"
+tags:
+  - chores
+  - allowance
 ---
 
 Picture it. Friday rolls around. You hand your 9 year old $10. No effort, no expectation, just a weekly deposit into their pocket. They shove it in their backpack and forget about it by Saturday morning.

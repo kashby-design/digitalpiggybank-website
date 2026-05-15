@@ -22,6 +22,7 @@ function formatDate(date: Date) {
   <section class="blog-hero section">
     <div class="container">
       <h1>Blog</h1>
+      <p class="blog-hero__nav"><a href="/blog/tags">Browse by topic &rsaquo;</a></p>
     </div>
   </section>
 
@@ -69,6 +70,15 @@ function formatDate(date: Date) {
 
   .blog-hero h1 {
     font-family: var(--font-display);
+  }
+
+  .blog-hero__nav {
+    margin-top: 12px;
+    font-size: 0.95rem;
+  }
+
+  .blog-hero__nav a {
+    color: var(--color-magenta);
   }
 
   /* Featured post */

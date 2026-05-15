@@ -4,6 +4,9 @@ date: 2026-03-17
 description: "Your kid sees a million ads before age 21. Here's how to teach them to spot the pitch — and pause before the impulse buy."
 image: "/images/blog/help-kids-see-through-ads.png"
 imageAlt: "A boy walking on top of ads, ignoring them as he walks."
+tags:
+  - ads-impulse
+  - parenting-mindset
 ---
 
 Your kid will see over a million advertisements before they turn 21. Not a typo. Over a million. And advertisers in the US spend billions every year specifically targeting children, with that number projected to keep climbing through 2031.

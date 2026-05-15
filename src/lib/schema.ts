@@ -114,7 +114,15 @@ type ArticleInput = {
   authorName?: string;
 };
 
+const TEAM_AUTHORS = new Set([ORG_NAME, 'Digital Piggy Bank Team']);
+
 export function article(input: ArticleInput) {
+  const name = input.authorName ?? ORG_NAME;
+  const isTeam = TEAM_AUTHORS.has(name);
+  const author = isTeam
+    ? { '@type': 'Organization', name, url: SITE_URL }
+    : { '@type': 'Person', name, url: `${SITE_URL}/about` };
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -123,11 +131,7 @@ export function article(input: ArticleInput) {
     image: input.image.startsWith('http') ? input.image : `${SITE_URL}${input.image}`,
     datePublished: input.datePublished.toISOString(),
     dateModified: (input.dateModified ?? input.datePublished).toISOString(),
-    author: {
-      '@type': 'Organization',
-      name: input.authorName ?? ORG_NAME,
-      url: SITE_URL,
-    },
+    author,
     publisher: { '@id': `${SITE_URL}/#organization` },
     mainEntityOfPage: {
       '@type': 'WebPage',

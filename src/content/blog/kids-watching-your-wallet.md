@@ -6,6 +6,8 @@ primeryKeywords: "how parents influence kids' money habits"
 SecondaryKeywords: "teaching kids about money, kids and money psychology, spendthrift vs tightwad kids, financial habits for children, raising money smart kids, parental modeling money, kids financial behavior"
 image: "/images/blog/kids-watching-your-wallet.png"
 imageAlt: "Parent and child at a store checkout sharing a money moment"
+tags:
+  - parenting-mindset
 ---
 
 You're at Target with your 6 year old. You grab a cart, head past the toy aisle, and watch them pick up the third Hot Wheels car this month. You start the speech about saving money. They look up at you and say, "But you bought yourself a coffee this morning."

@@ -1,0 +1,55 @@
+---
+interface Props {
+  author: string;
+  date: Date;
+  updatedDate?: Date;
+}
+
+const { author, date, updatedDate } = Astro.props;
+
+function fmt(d: Date) {
+  return d.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+---
+
+<div class="byline">
+  <span class="byline__author">By {author}</span>
+  <span class="byline__sep" aria-hidden="true">·</span>
+  <time class="byline__date" datetime={date.toISOString()}>{fmt(date)}</time>
+  {updatedDate && (
+    <span class="byline__updated">
+      <span class="byline__sep" aria-hidden="true">·</span>
+      <span>Updated <time datetime={updatedDate.toISOString()}>{fmt(updatedDate)}</time></span>
+    </span>
+  )}
+</div>
+
+<style>
+  .byline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+  }
+
+  .byline__author {
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .byline__sep {
+    opacity: 0.5;
+  }
+
+  .byline__updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+</style>
