@@ -24,21 +24,6 @@ const pageTitle =
     ? `${post.data.title}${BRAND_SUFFIX}`
     : post.data.title;
 
-const allPosts = (await getCollection('blog'))
-  .filter((p) => !p.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-
-const currentIndex = allPosts.findIndex((p) => p.id === post.id);
-const nextPost = allPosts[currentIndex + 1] || null;
-
-function formatDate(date: Date) {
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
-}
-
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 const imageUrl = post.data.image.src;
 const articleSchema = article({
@@ -99,14 +84,6 @@ const breadcrumbSchema = breadcrumbList([
       </div>
 
       <RelatedPosts currentSlug={post.id} tags={post.data.tags ?? []} />
-
-      {nextPost && (
-        <nav class="blog-post__next">
-          <a href={`/blog/${nextPost.id}`}>
-            {nextPost.data.title} &rsaquo;
-          </a>
-        </nav>
-      )}
     </div>
   </article>
 </BaseLayout>
@@ -233,25 +210,6 @@ const breadcrumbSchema = breadcrumbList([
   }
 
   .prose :global(a:hover) {
-    color: var(--color-pink);
-  }
-
-  /* Next post link */
-  .blog-post__next {
-    margin-top: 60px;
-    padding-top: 24px;
-    border-top: 1px solid var(--color-border);
-    text-align: right;
-  }
-
-  .blog-post__next a {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    color: var(--color-magenta);
-    transition: color 0.2s;
-  }
-
-  .blog-post__next a:hover {
     color: var(--color-pink);
   }
 

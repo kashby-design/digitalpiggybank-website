@@ -32,9 +32,3 @@ What I love about the Gig Allowance framework is that it incentivizes kids to be
 Ultimately, I don't think there's a single "right" answer to the allowance question. Different families have different dynamics and preferences. The key is to experiment and find what works best for you and your children. Regardless of your chosen method, using a digital piggy bank app can be a game-changer. It allows you to easily track earnings, set savings goals, and maintain transparency with your kids about their money. It fosters open communication about finances and helps everyone stay on the same page.
 
 Whether you choose a traditional weekly allowance, the flexible Gig Allowance, or a hybrid of the two, remember that the goal is to teach your children about financial responsibility. Whichever method you choose, open communication with your children is key. Use allowance as an opportunity to teach them about saving, budgeting and making good financial decisions.
-
-### Keep reading
-
-- [Chores for Cash](/blog/chores-for-cash)
-- [No Free Lunch: How Chore Earnings Teach Real Value](/blog/no-free-lunch)
-- [How Much Allowance Should You Give?](/blog/pay-for-allowance)

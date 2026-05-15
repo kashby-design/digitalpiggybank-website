@@ -148,9 +148,3 @@ Giving children an allowance can be a valuable tool for teaching them about mone
 21. Should Kids Get Allowance | PNC Insights, accessed January 22, 2025, [https://www.pnc.com/insights/personal-finance/spend/should-kids-get-allowance.html](https://www.pnc.com/insights/personal-finance/spend/should-kids-get-allowance.html)
 
 22. The New Rules of Allowances for Kids - HerMoney, accessed January 22, 2025, [https://hermoney.com/connect/family/new-rules-of-allowances-for-kids/](https://hermoney.com/connect/family/new-rules-of-allowances-for-kids/)
-
-### Keep reading
-
-- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
-- [Chores for Cash](/blog/chores-for-cash)
-- [Piggy Banks to Goals: Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)

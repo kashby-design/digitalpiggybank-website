@@ -87,9 +87,3 @@ Your money habits matter, but not as a script your kid will copy. They matter as
 If you want a simple way to make the save, spend, give conversation a regular part of your week, [Digital Piggy Bank](https://digitalpiggybank.com) tracks all three with your kids without printing chore charts or hunting for cash. It turns the abstract idea of "managing money" into something they can see, touch, and decide on every week.
 
 Your wallet is teaching them something either way. You get to choose what.
-
-### Keep reading
-
-- [Moms Are the First Money Teachers](/blog/moms-are-money-teachers)
-- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
-- [How to Help Your Kid See Through Ads](/blog/help-your-kid-see-through-ads)

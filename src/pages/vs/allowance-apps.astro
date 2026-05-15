@@ -41,10 +41,6 @@ const rows: ComparisonRow[] = [
     cells: [true, true, true, true, true],
   },
   {
-    label: 'Chore tracking',
-    cells: [true, true, true, true, true],
-  },
-  {
     label: 'Investing for kids',
     cells: [false, true, false, true, false],
   },
@@ -71,7 +67,7 @@ const rows: ComparisonRow[] = [
 >
   <section class="vs-hero section">
     <div class="container">
-      <p class="vs-hero__eyebrow"><a href="/">Home</a> · Compare</p>
+      <p class="vs-hero__eyebrow">Compare</p>
       <h1>Allowance apps compared (2026)</h1>
       <p class="vs-hero__lead">
         Five of the most popular kids' money apps, side by side. We'll be honest about
@@ -242,6 +238,10 @@ const rows: ComparisonRow[] = [
   .vs-cta {
     text-align: center;
     padding: 64px 0 96px;
+  }
+
+  .vs-cta :global(.app-store-buttons) {
+    justify-content: center;
   }
 
   .vs-cta h2 {

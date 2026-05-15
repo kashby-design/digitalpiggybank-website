@@ -92,9 +92,3 @@ That's usually when families switch from jars to a digital version of the same s
 If save / spend / give wasn't part of your childhood, this can feel a little earnest. *Three jars? Really?* Yes, really. The system works because it's blunt. There's no algorithm, no app to argue with, no parent to negotiate. The money goes where the labels say.
 
 Your kid will outgrow the jars. They won't outgrow the habit of asking, every time money shows up, "which job is this for?"
-
-### Keep reading
-
-- [Piggy Banks to Goals: Simple Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)
-- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
-- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)

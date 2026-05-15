@@ -152,9 +152,3 @@ Don't run this like a worksheet. Instead:
 - **Use the [save / spend / give system](/blog/save-spend-give-jars-for-kids).** Half these terms come up naturally when you're running an allowance — budget, balance, deposit, goal, withdraw, save, spend, give.
 
 By age 13, the goal isn't a teenager who can define "compound interest" on a quiz. It's a teenager who's heard the word enough times that when their first job offers them a retirement plan with employer matching, they at least know what to Google.
-
-### Keep reading
-
-- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
-- [When Money Is Invisible: Teaching Kids About Digital Payments](/blog/digital-money)
-- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
