@@ -1,0 +1,146 @@
+---
+export type Cell = string | boolean | null;
+
+export type ComparisonColumn = {
+  name: string;
+  highlight?: boolean;
+  href?: string;
+};
+
+export type ComparisonRow = {
+  label: string;
+  cells: Cell[];
+};
+
+interface Props {
+  columns: ComparisonColumn[];
+  rows: ComparisonRow[];
+  caption?: string;
+}
+
+const { columns, rows, caption } = Astro.props;
+
+function renderCell(cell: Cell) {
+  if (cell === true) return '✓';
+  if (cell === false) return '—';
+  if (cell === null) return '—';
+  return cell;
+}
+---
+
+<div class="comparison">
+  <table>
+    {caption && <caption>{caption}</caption>}
+    <thead>
+      <tr>
+        <th scope="col" aria-label="Feature"></th>
+        {columns.map((col) => (
+          <th scope="col" class:list={{ 'is-highlight': col.highlight }}>
+            {col.href ? (
+              <a href={col.href} target="_blank" rel="noopener noreferrer">{col.name}</a>
+            ) : (
+              col.name
+            )}
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((row) => (
+        <tr>
+          <th scope="row">{row.label}</th>
+          {row.cells.map((cell, i) => (
+            <td class:list={{ 'is-highlight': columns[i]?.highlight, 'is-bool': typeof cell === 'boolean' }}>
+              {renderCell(cell)}
+            </td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .comparison {
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    margin: 32px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+
+  caption {
+    caption-side: top;
+    padding: 12px 16px;
+    font-style: italic;
+    color: var(--color-text-light);
+    text-align: left;
+  }
+
+  thead th {
+    background: #f8f8fa;
+    text-align: left;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  thead th.is-highlight {
+    background: linear-gradient(135deg, #fd2375, #b9074a);
+    color: var(--color-white);
+  }
+
+  thead th a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  tbody th {
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--color-border);
+    background: #fafafb;
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+
+  tbody td.is-highlight {
+    background: rgba(253, 35, 117, 0.05);
+    font-weight: 500;
+  }
+
+  tbody td.is-bool {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--color-text);
+  }
+
+  tbody tr:last-child th,
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  @media (max-width: 720px) {
+    table {
+      font-size: 0.85rem;
+    }
+    thead th,
+    tbody th,
+    tbody td {
+      padding: 10px 12px;
+    }
+  }
+</style>
