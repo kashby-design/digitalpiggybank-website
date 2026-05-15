@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FeatureSection from '../components/FeatureSection.astro';
+import AppStoreButtons from '../components/AppStoreButtons.astro';
+
+import effortlessTracking from '../images/features/effortless_tracking.png';
+import financialSkills from '../images/features/financial_skills.png';
+import noBank from '../images/features/no_bank.png';
+import neverForget from '../images/features/never_forget.png';
+---
+
+<BaseLayout
+  title="Features — Digital Piggy Bank Allowance Tracker"
+  description="See every feature in Digital Piggy Bank — effortless allowance tracking, save / spend / give buckets, no bank account, and your kids' balance from any phone."
+>
+  <section class="features-hero section">
+    <div class="container">
+      <p class="features-hero__eyebrow">Features</p>
+      <h1>Everything you need to teach money. Nothing you don't.</h1>
+      <p class="features-hero__lead">
+        A simple ledger your whole family can use. No debit card to issue, no bank
+        account to open, no chore charts on the fridge.
+      </p>
+    </div>
+  </section>
+
+  <FeatureSection
+    title="Effortless tracking"
+    description="Easily add and remove money from each child's balance without doing the math yourself. Earnings, spending, and savings are all in one tidy view."
+    image={effortlessTracking}
+    imageAlt="A card of a child and how much they have saved, mimicking what is available on the app"
+  />
+
+  <FeatureSection
+    title="Save, Spend, Give buckets"
+    description="Help your kids learn how to manage money the way thoughtful adults do. Allocate every earned dollar across save, spend, and give buckets so the habit forms early."
+    image={financialSkills}
+    imageAlt="A daughter and father talking about money around a laptop"
+    reverse
+  />
+
+  <FeatureSection
+    title="No bank account needed"
+    description="You're already the bank. We just give you a better ledger. No debit card to issue, no minor account to open, no monthly fees disguised as transaction limits."
+    image={noBank}
+    imageAlt="A vector illustration of a large bank and two trees"
+  />
+
+  <FeatureSection
+    title="Their money, your phone, anywhere"
+    description="At the store and your kid wants to know if they can afford it? Pull up the app. No more 'I'll check when we get home.' Their balance lives on your phone, ready when you are."
+    image={neverForget}
+    imageAlt="A vector illustration of a car on a road driving"
+    reverse
+  />
+
+  <section class="features-cta section">
+    <div class="container">
+      <h2>Ready to skip the chore chart?</h2>
+      <p>Start your 14-day free trial. $7.99/year after that — for the whole family.</p>
+      <AppStoreButtons />
+      <p class="features-cta__links">
+        <a href="/pricing">See pricing</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vs/allowance-apps">Compare to other apps</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .features-hero {
+    text-align: center;
+    padding: 56px 0 24px;
+  }
+
+  .features-hero__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .features-hero h1 {
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+  }
+
+  .features-hero__lead {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .features-cta {
+    background: #f8f8fa;
+    text-align: center;
+    padding: 64px 0;
+  }
+
+  .features-cta h2 {
+    margin-bottom: 12px;
+  }
+
+  .features-cta p {
+    color: var(--color-text);
+    margin-bottom: 24px;
+  }
+
+  .features-cta__links {
+    margin-top: 24px;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  .features-cta__links a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+    margin: 0 8px;
+  }
+</style>

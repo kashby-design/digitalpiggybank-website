@@ -1,0 +1,300 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppStoreButtons from '../components/AppStoreButtons.astro';
+
+const SITE = 'https://digitalpiggybank.com';
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Digital Piggy Bank',
+  description:
+    'A digital piggy bank app for parents to track allowance, chores, and savings for kids 4–12. No bank account or debit card required.',
+  brand: { '@id': `${SITE}/#organization` },
+  offers: [
+    {
+      '@type': 'Offer',
+      name: 'Annual',
+      price: '7.99',
+      priceCurrency: 'USD',
+      url: `${SITE}/pricing`,
+      availability: 'https://schema.org/InStock',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '7.99',
+        priceCurrency: 'USD',
+        billingDuration: 'P1Y',
+        billingIncrement: 1,
+      },
+    },
+    {
+      '@type': 'Offer',
+      name: 'Monthly',
+      price: '1.00',
+      priceCurrency: 'USD',
+      url: `${SITE}/pricing`,
+      availability: 'https://schema.org/InStock',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '1.00',
+        priceCurrency: 'USD',
+        billingDuration: 'P1M',
+        billingIncrement: 1,
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Pricing — Digital Piggy Bank ($7.99/yr or $1/mo)"
+  description="Digital Piggy Bank costs $7.99/year (about 66¢/month) or $1/month. 14-day free trial. No bank account, no debit card, no per-kid fees."
+  extraSchema={[productSchema]}
+>
+  <section class="pricing-hero section">
+    <div class="container">
+      <p class="pricing-hero__eyebrow">Pricing</p>
+      <h1>One price. Every kid in the family.</h1>
+      <p class="pricing-hero__lead">
+        No per-child fees. No card to issue. No bank account to open. Just a simple
+        ledger your whole family can use. Start with a 14-day free trial.
+      </p>
+    </div>
+  </section>
+
+  <section class="pricing-plans section">
+    <div class="container">
+      <div class="plans">
+        <div class="plan">
+          <p class="plan__name">Monthly</p>
+          <p class="plan__price"><span class="plan__amount">$1.00</span><span class="plan__period">/mo</span></p>
+          <p class="plan__billing">Billed monthly</p>
+          <ul class="plan__includes">
+            <li>Unlimited kids</li>
+            <li>Save / spend / give buckets</li>
+            <li>Works on any phone</li>
+            <li>14-day free trial</li>
+          </ul>
+        </div>
+
+        <div class="plan plan--featured">
+          <p class="plan__badge">Save 33%</p>
+          <p class="plan__name">Annual</p>
+          <p class="plan__price"><span class="plan__amount">$0.66</span><span class="plan__period">/mo</span></p>
+          <p class="plan__billing">$7.99 billed yearly</p>
+          <ul class="plan__includes">
+            <li>Unlimited kids</li>
+            <li>Save / spend / give buckets</li>
+            <li>Works on any phone</li>
+            <li>14-day free trial</li>
+            <li><strong>Lowest cost per month</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="plans__cta">
+        <AppStoreButtons />
+        <p class="plans__compare">
+          Wondering how that stacks up against Greenlight, GoHenry, or BusyKid?
+          <a href="/vs/allowance-apps">See the side-by-side comparison &rsaquo;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-faq section">
+    <div class="container">
+      <h2>Pricing FAQ</h2>
+
+      <div class="pf-item">
+        <h3>Do you charge per kid?</h3>
+        <p>No. One subscription covers every child in your family.</p>
+      </div>
+
+      <div class="pf-item">
+        <h3>Is there a free trial?</h3>
+        <p>Yes — every account gets a 14-day free trial. You can cancel before it ends and pay nothing.</p>
+      </div>
+
+      <div class="pf-item">
+        <h3>How does cancellation work?</h3>
+        <p>You can cancel anytime through the App Store or Google Play subscription settings. We don't store payment details.</p>
+      </div>
+
+      <div class="pf-item">
+        <h3>Why is it so much cheaper than the other apps?</h3>
+        <p>
+          We don't issue debit cards, manage real bank accounts, or run an investment platform. That keeps our costs low —
+          and lets us pass the savings on to you.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .pricing-hero {
+    text-align: center;
+    padding: 56px 0 24px;
+  }
+
+  .pricing-hero__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .pricing-hero h1 {
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+  }
+
+  .pricing-hero__lead {
+    max-width: 580px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .pricing-plans {
+    padding: 24px 0 64px;
+  }
+
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+
+  .plan {
+    background: var(--color-white);
+    border: 2px solid var(--color-border);
+    border-radius: 20px;
+    padding: 36px 32px;
+    flex: 1 1 280px;
+    max-width: 340px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .plan--featured {
+    border-color: var(--color-magenta);
+  }
+
+  .plan__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: var(--gradient-primary, linear-gradient(135deg, #fd2375, #b9074a));
+    color: var(--color-white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .plan--featured .plan__name {
+    margin-top: 24px;
+  }
+
+  .plan__name {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 12px;
+  }
+
+  .plan__price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin: 0 0 4px;
+  }
+
+  .plan__amount {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .plan__period {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .plan__billing {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin: 0 0 20px;
+  }
+
+  .plan__includes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .plan__includes li {
+    padding: 8px 0;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text);
+    font-size: 0.95rem;
+  }
+
+  .plan__includes li:first-child {
+    border-top: 0;
+  }
+
+  .plans__cta {
+    text-align: center;
+  }
+
+  .plans__compare {
+    margin-top: 24px;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  .plans__compare a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+  }
+
+  .pricing-faq {
+    background: #f8f8fa;
+    padding: 64px 0 96px;
+  }
+
+  .pricing-faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .pf-item {
+    max-width: 720px;
+    margin: 0 auto 24px;
+  }
+
+  .pf-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+  }
+
+  .pf-item p {
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+</style>

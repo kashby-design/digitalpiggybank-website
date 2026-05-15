@@ -1,0 +1,266 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import AppStoreButtons from '../../components/AppStoreButtons.astro';
+import type { ComparisonColumn, ComparisonRow } from '../../components/ComparisonTable.astro';
+import { breadcrumbList } from '../../lib/schema';
+
+const SITE = 'https://digitalpiggybank.com';
+
+const columns: ComparisonColumn[] = [
+  { name: 'Digital Piggy Bank', highlight: true, href: 'https://digitalpiggybank.com' },
+  { name: 'Greenlight', href: 'https://greenlight.com' },
+  { name: 'GoHenry', href: 'https://gohenry.com' },
+  { name: 'BusyKid', href: 'https://busykid.com' },
+  { name: 'FamZoo', href: 'https://famzoo.com' },
+];
+
+const rows: ComparisonRow[] = [
+  {
+    label: 'Starting price',
+    cells: ['$7.99 / year', '$5.99 / mo', '$4.99 / mo / child', '$4.00 / mo', '$5.99 / mo'],
+  },
+  {
+    label: 'Price per kid',
+    cells: ['Unlimited kids included', 'Up to 5 kids', 'Per child', 'Up to 5 kids', 'Unlimited kids'],
+  },
+  {
+    label: 'Free trial',
+    cells: ['14 days', '1 month', '1 month', '30 days', '2 months'],
+  },
+  {
+    label: 'No bank account required',
+    cells: [true, false, false, false, false],
+  },
+  {
+    label: 'No debit card to manage',
+    cells: [true, false, false, false, false],
+  },
+  {
+    label: 'Save / Spend / Give buckets',
+    cells: [true, true, true, true, true],
+  },
+  {
+    label: 'Chore tracking',
+    cells: [true, true, true, true, true],
+  },
+  {
+    label: 'Investing for kids',
+    cells: [false, true, false, true, false],
+  },
+  {
+    label: 'Works without a phone for the kid',
+    cells: [true, true, false, false, true],
+  },
+  {
+    label: 'Account opens at age',
+    cells: ['Any age', '8+ (with parent)', '6+', '5+', 'Any age'],
+  },
+];
+---
+
+<BaseLayout
+  title="Best Kids' Allowance Apps Compared (2026)"
+  description="Side-by-side comparison of Digital Piggy Bank vs Greenlight, GoHenry, BusyKid, and FamZoo. Pricing, features, and which app fits which family."
+  extraSchema={[
+    breadcrumbList([
+      { name: 'Home', url: `${SITE}/` },
+      { name: 'Compare', url: `${SITE}/vs/allowance-apps` },
+    ]),
+  ]}
+>
+  <section class="vs-hero section">
+    <div class="container">
+      <p class="vs-hero__eyebrow"><a href="/">Home</a> · Compare</p>
+      <h1>Allowance apps compared (2026)</h1>
+      <p class="vs-hero__lead">
+        Five of the most popular kids' money apps, side by side. We'll be honest about
+        where the others win — and where Digital Piggy Bank's "no bank, no card,
+        $7.99/year" approach makes more sense.
+      </p>
+    </div>
+  </section>
+
+  <section class="vs-table section">
+    <div class="container">
+      <ComparisonTable columns={columns} rows={rows} caption="Pricing and features as of 2026. Check each provider for the latest." />
+    </div>
+  </section>
+
+  <section class="vs-take section">
+    <div class="container vs-take__inner">
+      <h2>Honest take: which one's right for your family?</h2>
+
+      <div class="vs-take__card">
+        <h3>Pick Digital Piggy Bank if…</h3>
+        <ul>
+          <li>You don't want to hand your kid a debit card.</li>
+          <li>You're already the bank — you just need a better ledger.</li>
+          <li>You have more than one kid and don't want a per-child fee.</li>
+          <li>You want the cheapest option that still teaches save / spend / give.</li>
+        </ul>
+        <p class="vs-take__cta">
+          <a href="/pricing">See pricing &rsaquo;</a>
+        </p>
+      </div>
+
+      <div class="vs-take__card">
+        <h3>Pick Greenlight if…</h3>
+        <ul>
+          <li>You want a real debit card your kid can use anywhere.</li>
+          <li>You're interested in introducing investing to older kids.</li>
+          <li>You're okay paying $5.99+ per month for the broader feature set.</li>
+        </ul>
+      </div>
+
+      <div class="vs-take__card">
+        <h3>Pick GoHenry if…</h3>
+        <ul>
+          <li>You have one kid and want a card-first experience.</li>
+          <li>You like the customizable card design.</li>
+          <li>You're comfortable paying per-child.</li>
+        </ul>
+      </div>
+
+      <div class="vs-take__card">
+        <h3>Pick BusyKid if…</h3>
+        <ul>
+          <li>You want a card plus charity-giving and stock-buying built in.</li>
+          <li>You like a strong chore-pay focus and a flat family price.</li>
+        </ul>
+      </div>
+
+      <div class="vs-take__card">
+        <h3>Pick FamZoo if…</h3>
+        <ul>
+          <li>You want a deeper "family banking" simulation with parent-paid IOUs.</li>
+          <li>You don't mind a longer learning curve for richer functionality.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="vs-cta section">
+    <div class="container">
+      <h2>Already convinced?</h2>
+      <p>Start your 14-day free trial — no card needed, no per-kid fee, $7.99/year after.</p>
+      <AppStoreButtons />
+      <p class="vs-cta__back">
+        Want a closer look first? <a href="/features">See every feature &rsaquo;</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .vs-hero {
+    text-align: center;
+    padding: 56px 0 24px;
+  }
+
+  .vs-hero__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .vs-hero__eyebrow a {
+    color: var(--color-magenta);
+  }
+
+  .vs-hero h1 {
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+  }
+
+  .vs-hero__lead {
+    max-width: 640px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .vs-table {
+    padding: 24px 0 64px;
+  }
+
+  .vs-table .container {
+    max-width: 1100px;
+  }
+
+  .vs-take {
+    background: #f8f8fa;
+    padding: 64px 0;
+  }
+
+  .vs-take__inner {
+    max-width: 760px;
+  }
+
+  .vs-take h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .vs-take__card {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-border);
+  }
+
+  .vs-take__card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+  }
+
+  .vs-take__card ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .vs-take__card li {
+    margin-bottom: 6px;
+    line-height: 1.55;
+    color: var(--color-text);
+  }
+
+  .vs-take__cta {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .vs-take__cta a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .vs-cta {
+    text-align: center;
+    padding: 64px 0 96px;
+  }
+
+  .vs-cta h2 {
+    margin-bottom: 12px;
+  }
+
+  .vs-cta p {
+    color: var(--color-text);
+    margin-bottom: 24px;
+  }
+
+  .vs-cta__back {
+    margin-top: 24px;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  .vs-cta__back a {
+    color: var(--color-magenta);
+    text-decoration: underline;
+  }
+</style>
