@@ -6,6 +6,9 @@ primeryKeywords: "daily money habits for kids"
 SecondaryKeywords: "teaching kids to save money, money habits for tweens, how to teach kids self-control with money, building saving habits in children, money habits for 11 and 12 year olds, raising good savers, daily savings routines for kids"
 image: "/images/blog/daily-money-habits.png"
 imageAlt: "Tween checking savings progress on a phone app at the kitchen table"
+tags:
+  - saving
+  - parenting-mindset
 ---
 
 Your kid gets birthday money. Forty-eight hours later, it's gone. A toy, a snack, a pack of trading cards, and they're already asking when the next chunk of money is coming.

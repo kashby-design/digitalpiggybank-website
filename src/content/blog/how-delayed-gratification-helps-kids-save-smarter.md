@@ -4,6 +4,9 @@ date: 2026-02-24
 description: "Learn how the famous marshmallow test reveals the power of teaching kids to wait—and how you can use it to build smarter saving habits at home."
 image: "/images/blog/delayed-gratification.jpg"
 imageAlt: "A large marshmallow with two kids eyeing it while one is reaching for it"
+tags:
+  - saving
+  - parenting-mindset
 ---
 
 Picture this: you set a single marshmallow in front of your five-year-old and tell them that if they can wait five-ten minutes without eating it, they will get two marshmallows. Then you leave the room.

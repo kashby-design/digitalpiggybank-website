@@ -4,6 +4,9 @@ date: 2026-04-25
 description: "Should you give your child a weekly allowance or pay per task? Compare both approaches and find what works best for your family."
 image: "/images/blog/weekly-vs-gig-allowance.jpg"
 imageAlt: "Calendar with coins stacked next to it"
+tags:
+  - allowance
+  - chores
 ---
 
 ## The Allowance Debate: Weekly Stipend vs. the Gig Economy Approach

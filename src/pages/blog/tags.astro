@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { BLOG_TAGS, TAG_LABELS, type BlogTag } from '../../content.config';
+
+const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
+
+const counts: Record<BlogTag, number> = Object.fromEntries(
+  BLOG_TAGS.map((t) => [t, 0])
+) as Record<BlogTag, number>;
+
+for (const p of posts) {
+  for (const t of p.data.tags ?? []) {
+    if (t in counts) counts[t as BlogTag]++;
+  }
+}
+
+const entries = BLOG_TAGS.map((t) => ({ tag: t, label: TAG_LABELS[t], count: counts[t] }))
+  .filter((e) => e.count > 0)
+  .sort((a, b) => b.count - a.count);
+---
+
+<BaseLayout
+  title="Browse by topic — Digital Piggy Bank Blog"
+  description="Browse every Digital Piggy Bank blog post by topic — allowance, chores, saving, digital money, parenting mindset, and more."
+>
+  <section class="tags-hero section">
+    <div class="container">
+      <p class="tags-hero__eyebrow"><a href="/blog">Blog</a></p>
+      <h1>Browse by topic</h1>
+    </div>
+  </section>
+
+  <section class="tags-list section">
+    <div class="container">
+      <ul class="tags-list__items">
+        {entries.map((e) => (
+          <li>
+            <a href={`/blog/tag/${e.tag}`}>
+              <span class="tags-list__label">{e.label}</span>
+              <span class="tags-list__count">{e.count}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tags-hero {
+    padding: 48px 0 16px;
+    text-align: center;
+  }
+
+  .tags-hero__eyebrow {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .tags-hero__eyebrow a {
+    color: var(--color-magenta);
+  }
+
+  .tags-hero h1 {
+    font-family: var(--font-display);
+  }
+
+  .tags-list__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .tags-list__items a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .tags-list__items a:hover {
+    border-color: var(--color-magenta);
+    transform: translateY(-1px);
+    color: var(--color-magenta);
+  }
+
+  .tags-list__label {
+    font-weight: 500;
+  }
+
+  .tags-list__count {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    background: var(--color-border);
+    padding: 2px 10px;
+    border-radius: 999px;
+  }
+</style>
