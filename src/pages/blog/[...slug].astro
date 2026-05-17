@@ -213,6 +213,37 @@ const breadcrumbSchema = breadcrumbList([
     color: var(--color-pink);
   }
 
+  .prose :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0 28px;
+    font-size: 0.95rem;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .prose :global(thead th) {
+    background: #f8f8fa;
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+
+  .prose :global(tbody td) {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+
+  .prose :global(tbody tr:last-child td) {
+    border-bottom: 0;
+  }
+
   @media (max-width: 809px) {
     .blog-post__hero img {
       height: 300px;
@@ -225,6 +256,12 @@ const breadcrumbSchema = breadcrumbList([
 
     .prose :global(h2) {
       font-size: 1.4rem;
+    }
+
+    .prose :global(table) {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
   }
 
