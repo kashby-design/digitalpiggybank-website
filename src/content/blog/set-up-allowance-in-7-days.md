@@ -2,14 +2,14 @@
 title: "How to Set Up an Allowance System in 7 Days"
 date: 2026-05-08
 description: "A 7-day plan to set up a working allowance system — decide the rules, pick the amount, run a test week, and dial it in. Day-by-day checklist included."
-image: "../../images/blog/_placeholder.svg"
-imageAlt: "A weekly calendar marked with a payday checkmark"
+image: "../../images/blog/allowance-setup.png"
+imageAlt: "A mother and daughter setting up a weekly calendar marked with a payday checkmark"
 tags:
   - allowance
   - chores
 ---
 
-Most parents don't have an allowance problem. They have a *not-started* problem.
+Most parents don't have an allowance problem. They have a _not-started_ problem.
 
 You've thought about it. You've read about it. Maybe you tried once, lost track after week three, and quietly let it die. This guide skips the philosophy and gives you a 7-day plan to get a working allowance system running by next Sunday.
 
@@ -51,7 +51,7 @@ Aim for 3-6 earning chores. More than that and the system collapses under its ow
 
 ## Day 4 — Wednesday: Set the rules
 
-Three rules to decide *before* the first payday:
+Three rules to decide _before_ the first payday:
 
 1. **When is payday?** Same day, every week. Sunday morning is the most common. Make it a ritual.
 2. **What happens if work isn't done?** Pick one: pay docked, redo it, no pay for that chore. Whatever you pick, stick to it.
@@ -97,7 +97,7 @@ Make a note on your phone for Sunday morning: "Allowance payday."
 
 ## Day 8 — Sunday: First payday
 
-Do it. Hand it over. Talk about it briefly — *one* minute — and let them split it across save, spend, and give if you've set that up.
+Do it. Hand it over. Talk about it briefly — _one_ minute — and let them split it across save, spend, and give if you've set that up.
 
 Then walk away. The hardest part of an allowance system isn't the math. It's resisting the urge to comment on every spending decision.
 
@@ -117,3 +117,9 @@ Most allowance systems die in week 4 not because the design is wrong, but becaus
 Set a recurring reminder on your phone. Pay even when the amount is small. Pay even when the chores were imperfect. Consistency, not perfection, is what makes the lesson land.
 
 Seven days from now, you'll be set up. A month from now, you'll have a working system. A year from now, your kid will know more about money than most of their peers — and you'll wonder why you didn't start sooner.
+
+### Keep reading
+
+- [How Much Allowance Should You Give Your Child?](/blog/pay-for-allowance)
+- [Weekly vs Gig Allowance](/blog/weekly-vs-gig-allowance)
+- [Save, Spend, Give Jars: A Simple System That Actually Sticks](/blog/save-spend-give-jars-for-kids)

@@ -2,8 +2,8 @@
 title: "Save, Spend, Give Jars: A Simple System That Actually Sticks"
 date: 2026-05-12
 description: "The save / spend / give jar system teaches kids the three jobs of money in 5 minutes. Here's how to set it up, what to put in each jar, and when to switch to an app."
-image: "../../images/blog/_placeholder.svg"
-imageAlt: "Three glass jars labeled save, spend, and give"
+image: "../../images/blog/save-spend-give.png"
+imageAlt: "kid placing a coin in one of three boxes labeled save, spend, and give"
 tags:
   - saving
   - parenting-mindset
@@ -19,7 +19,7 @@ Here's how to run it.
 
 A traditional piggy bank teaches one thing: keep money. That's a fine start, but it leaves out the harder lessons.
 
-- A kid who only saves never learns to *choose* what to spend on.
+- A kid who only saves never learns to _choose_ what to spend on.
 - A kid who only spends never feels the satisfaction of reaching a goal.
 - A kid who never gives never learns that money can be a tool for values, not just stuff.
 
@@ -33,19 +33,19 @@ Three jars force the choice every time money comes in. That's the whole point. T
 
 The save jar is for goals that take more than one allowance cycle to reach. A new Lego set. A bike. A trip with friends.
 
-The rule: money in the save jar is *off the table* until the goal is hit. That's the whole exercise. If they raid it, the lesson breaks.
+The rule: money in the save jar is _off the table_ until the goal is hit. That's the whole exercise. If they raid it, the lesson breaks.
 
 ### Spend
 
 The spend jar is for small, immediate wants. Snacks at the store. A new pack of stickers. The thing they decide they need at Target on a Tuesday.
 
-The rule: this money is *theirs to blow*. No lectures about impulse buys (yet). Spending on the wrong thing is also a lesson — sometimes the most important one.
+The rule: this money is _theirs to blow_. No lectures about impulse buys (yet). Spending on the wrong thing is also a lesson — sometimes the most important one.
 
 ### Give
 
 The give jar is for causes, gifts, or people they want to help. A favorite animal shelter. A birthday present for a sibling. A donation jar at the grocery checkout.
 
-The rule: it must go to someone or something *other than the child*. No buying themselves a treat and calling it a gift.
+The rule: it must go to someone or something _other than the child_. No buying themselves a treat and calling it a gift.
 
 ## How much goes in each jar?
 
@@ -57,7 +57,7 @@ There's no perfect ratio, but a common starting split is **50 / 40 / 10**:
 
 For older kids working toward a real goal, shift to 60 / 30 / 10 or even 70 / 20 / 10. For younger kids who get bored fast, start with 30 / 60 / 10 so they feel the spending muscle first.
 
-The most important thing isn't the ratio — it's that the split happens *every time money comes in*, automatically, before the kid decides what to do with it. Set the ratio. Stick to it for a month. Adjust if it isn't working.
+The most important thing isn't the ratio — it's that the split happens _every time money comes in_, automatically, before the kid decides what to do with it. Set the ratio. Stick to it for a month. Adjust if it isn't working.
 
 ## Setting it up in five minutes
 
@@ -69,7 +69,7 @@ The most important thing isn't the ratio — it's that the split happens *every 
 
 ## When jars stop working
 
-The jar system has a built-in expiration date. It works beautifully for ages 4-8 because money is concrete — you can *see* the saving goal getting closer.
+The jar system has a built-in expiration date. It works beautifully for ages 4-8 because money is concrete — you can _see_ the saving goal getting closer.
 
 It starts to crack around ages 9-11 because:
 
@@ -89,6 +89,12 @@ That's usually when families switch from jars to a digital version of the same s
 
 ## A note for parents who didn't grow up with this
 
-If save / spend / give wasn't part of your childhood, this can feel a little earnest. *Three jars? Really?* Yes, really. The system works because it's blunt. There's no algorithm, no app to argue with, no parent to negotiate. The money goes where the labels say.
+If save / spend / give wasn't part of your childhood, this can feel a little earnest. _Three jars? Really?_ Yes, really. The system works because it's blunt. There's no algorithm, no app to argue with, no parent to negotiate. The money goes where the labels say.
 
 Your kid will outgrow the jars. They won't outgrow the habit of asking, every time money shows up, "which job is this for?"
+
+### Keep reading
+
+- [Piggy Banks to Goals: Simple Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)
+- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
