@@ -88,6 +88,12 @@ Assign small extra tasks — not regular chores, but bonus opportunities — tha
 
 When your child finally reaches a savings goal, make it a moment. Take a photo. Let them hand over the money themselves. The celebration reinforces the lesson: waiting was worth it.
 
+## How We Handle Cash Gifts at Our House
+
+Every birthday, our kids end up with a small pile of bills — five from grandma, a check from an aunt, a twenty tucked into a card. Instead of letting it disappear into a backpack pocket, we do a swap: we log the dollar amount in their digital piggy bank and hold onto the cash ourselves.
+
+Most of the time, that money gets spent when we are already together — at the bookstore, at Target, on a treat after a soccer game. They pick something, we pay at the register, and we deduct it from their app balance. The cash stays in our wallet as a backup for the moments they need actual bills: a school book fair, a vending machine at the pool, a friend's lemonade stand we drive past.
+
 ## How a Digital Piggy Bank Makes Waiting Visible
 
 ### Progress Bars Kids Can Actually See

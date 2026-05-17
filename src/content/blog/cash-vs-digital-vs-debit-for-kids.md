@@ -2,8 +2,8 @@
 title: "Cash vs Digital Piggy Bank vs Debit Card: What's Right for Your Kid?"
 date: 2026-05-05
 description: "Cash, a digital piggy bank, or a kids' debit card — which works best at which age? An honest comparison of all three, with a recommendation for each stage."
-image: "../../images/blog/_placeholder.svg"
-imageAlt: "A pile of cash, a phone screen showing a balance, and a debit card"
+image: "../../images/blog/cash-app-card.png"
+imageAlt: "a kid looking at a pile of cash, a phone screen showing a balance, and a debit card"
 tags:
   - digital-money
   - saving
@@ -20,11 +20,11 @@ Here's a clear breakdown of when each makes sense.
 
 | Method | Best for ages | Pros | Cons |
 |---|---|---|---|
-| Cash | 4–8 | Tactile, builds counting and trade-off intuition | Easy to lose, doesn't follow them online |
-| Digital piggy bank (parent-tracked) | 6–12 | Cheap, no card to manage, visible save / spend / give | Kid can't spend independently |
+| Cash | 4–5 | Tactile, builds counting and trade-off intuition | Easy to lose, doesn't follow them online |
+| Digital piggy bank (parent-tracked) | 6–10 | Cheap, no card to manage, visible save / spend / give | Kid can't spend independently |
 | Kids' debit card | 10+ | Real-world practice, works online | Expensive, per-child fees, opens fraud surface |
 
-Most families start with cash, switch to a digital piggy bank around age 6 or 7, and add a debit card around age 10-12 when independent spending becomes useful.
+Most families start with cash, switch to a digital piggy bank around age 6, and add a debit card around age 10-12 when independent spending becomes useful.
 
 ## Option 1: Cash
 
@@ -42,7 +42,7 @@ There's a reason cash is the classic. When your kid spends a $5 bill, they can *
 - **Save / spend / give breaks down.** Splitting $7 across three jars when most of their income is birthday checks or Venmo is awkward.
 - **It doesn't follow them online.** Roblox doesn't take quarters.
 
-**Recommendation:** Start with cash from ages 4 to about 7 or 8. Three jars on a shelf labeled save, spend, and give. (Full setup in [Save, Spend, Give Jars](/blog/save-spend-give-jars-for-kids).)
+**Recommendation:** Start with cash from ages 4 to 5. Three jars on a shelf labeled save, spend, and give. (Full setup in [Save, Spend, Give Jars](/blog/save-spend-give-jars-for-kids).)
 
 ## Option 2: A digital piggy bank (parent-tracked)
 
@@ -66,7 +66,7 @@ This is the middle ground between cash and a real card, and it fits a wide age r
 
 Full disclosure: this is the category we work in. [Digital Piggy Bank](/) is a digital piggy bank for parents of kids 4–12, because nobody carries cash anymore. We built it because we wanted a save / spend / give tool that didn't require a debit card or a per-child fee. If you want to compare us to the alternatives honestly, see [our comparison page](/vs/allowance-apps).
 
-**Recommendation:** From ages 6 or 7 until at least 10 or 11. For some families, this is the *only* system they need until their kid leaves for college.
+**Recommendation:** From age 6 until at least 10. For some families, this is the *only* system they need until their kid leaves for college.
 
 ## Option 3: A kids' debit card
 
@@ -92,8 +92,8 @@ The big names here are Greenlight, GoHenry, BusyKid, and FamZoo. All of them cha
 
 Here's what I'd tell a friend asking:
 
-- **Ages 4-7:** Cash + three jars. Nothing else. This is when tactile money builds the foundation.
-- **Ages 7-10:** Digital piggy bank app. You're the bank. Save / spend / give buckets. Cheap, simple, scales.
+- **Ages 4-5:** Cash + three jars. Nothing else. This is when tactile money builds the foundation.
+- **Ages 6-10:** Digital piggy bank app. You're the bank. Save / spend / give buckets. Cheap, simple, scales.
 - **Ages 10-13:** Digital piggy bank *plus* small amounts of cash for in-person spending. Maybe a card at the upper end if they're doing a lot of online or away-from-parent spending.
 - **Ages 13+:** Add a debit card. By now they understand value, trade-offs, and what a balance means. The card teaches the *mechanics* of digital money, on top of the values they already have.
 

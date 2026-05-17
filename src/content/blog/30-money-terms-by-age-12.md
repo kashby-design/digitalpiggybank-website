@@ -2,7 +2,7 @@
 title: "30 Money Terms Every Kid Should Know by Age 12"
 date: 2026-05-01
 description: "A simple, age-appropriate glossary of 30 money terms — from allowance and savings to compound interest and credit — explained for kids 6 to 12."
-image: "../../images/blog/_placeholder.svg"
+image: "../../images/blog/money-terms.png"
 imageAlt: "A child reading a book with money terms"
 tags:
   - parenting-mindset
@@ -14,7 +14,7 @@ Your kid doesn't need a finance degree by middle school. They do need a working 
 
 Here are 30 terms, organized by what to teach roughly when, with definitions written for kids (not their parents).
 
-Use this as a reference. Read a section together. Bring up one term at dinner. You don't need to teach all 30 at once — you need to teach *enough of them that the rest become obvious*.
+Use this as a reference. Read a section together. Bring up one term at dinner. You don't need to teach all 30 at once — you need to teach _enough of them that the rest become obvious_.
 
 ## The basics (ages 6–8)
 
@@ -32,7 +32,7 @@ Money you get on a regular schedule — usually weekly — from your parents.
 
 ### 4. Earn
 
-To get money in exchange for doing work. Cleaning the bathroom for $2 means you *earned* $2.
+To get money in exchange for doing work. Cleaning the bathroom for $2 means you _earned_ $2.
 
 ### 5. Spend
 
@@ -56,7 +56,7 @@ How much money something is. The cost of a candy bar is $2. The cost of a bike i
 
 ### 10. Worth
 
-How valuable something is to *you*. A $20 toy and a $20 book cost the same, but they might be worth different amounts to different kids.
+How valuable something is to _you_. A $20 toy and a $20 book cost the same, but they might be worth different amounts to different kids.
 
 ## Earning and tracking (ages 8–10)
 
@@ -86,11 +86,11 @@ The total amount of money you have right now. If you save $5 a week for four wee
 
 ### 17. Deposit
 
-Adding money *into* an account.
+Adding money _into_ an account.
 
 ### 18. Withdraw
 
-Taking money *out* of an account.
+Taking money _out_ of an account.
 
 ### 19. Interest
 
@@ -124,7 +124,7 @@ A specific amount of money borrowed, usually with a plan to pay it back in piece
 
 ### 26. Compound interest
 
-When the interest on your savings starts earning interest *too*. Save $100 with 10% interest: after year one you have $110. After year two you have $121 — not $120 — because the new interest earned interest. This is how money grows over long periods.
+When the interest on your savings starts earning interest _too_. Save $100 with 10% interest: after year one you have $110. After year two you have $121 — not $120 — because the new interest earned interest. This is how money grows over long periods.
 
 ### 27. Investing
 
@@ -152,3 +152,9 @@ Don't run this like a worksheet. Instead:
 - **Use the [save / spend / give system](/blog/save-spend-give-jars-for-kids).** Half these terms come up naturally when you're running an allowance — budget, balance, deposit, goal, withdraw, save, spend, give.
 
 By age 13, the goal isn't a teenager who can define "compound interest" on a quiz. It's a teenager who's heard the word enough times that when their first job offers them a retirement plan with employer matching, they at least know what to Google.
+
+### Keep reading
+
+- [Daily Money Habits That Build Lifelong Savers](/blog/daily-money-habits)
+- [When Money Is Invisible: Teaching Kids About Digital Payments](/blog/digital-money)
+- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)

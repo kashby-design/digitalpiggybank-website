@@ -2,7 +2,7 @@
 title: "What to Do With Christmas and Birthday Money: A Parent's Playbook"
 date: 2026-05-03
 description: "Gift money is a stealth teaching moment. A simple playbook for handling Christmas, birthday, and grandparent money — without killing the magic."
-image: "../../images/blog/_placeholder.svg"
+image: "../../images/blog/christmas-money.png"
 imageAlt: "A child holding a birthday card with cash tucked inside"
 tags:
   - saving
@@ -13,7 +13,7 @@ Grandma slides a $50 bill into a birthday card. Your kid lights up. Two days lat
 
 This happens to every family. Gift money — Christmas, birthdays, grandparents who hand out cash — moves through kids fast because there's no system around it. It feels free, so it gets spent like it's free.
 
-The good news: gift money is one of the best teaching moments of the year. You're not asking the kid to delay anything. You're asking them to *plan* something they're already excited about.
+The good news: gift money is one of the best teaching moments of the year. You're not asking the kid to delay anything. You're asking them to _plan_ something they're already excited about.
 
 Here's a playbook that works.
 
@@ -41,11 +41,11 @@ That's the whole conversation. You're not negotiating. You're not lecturing. You
 
 There's no perfect ratio, but here's what works in practice:
 
-| Amount | Ages 4-6 | Ages 7-9 | Ages 10-12 |
-|---|---|---|---|
-| Under $20 | 100% spend | 70% spend, 30% save | 50% spend, 40% save, 10% give |
-| $20–$50 | 70% spend, 30% save | 50% spend, 40% save, 10% give | 30% spend, 60% save, 10% give |
-| $50–$100 | 50% spend, 50% save | 30% spend, 60% save, 10% give | 20% spend, 70% save, 10% give |
+| Amount    | Ages 4-6            | Ages 7-9                      | Ages 10-12                    |
+| --------- | ------------------- | ----------------------------- | ----------------------------- |
+| Under $20 | 100% spend          | 70% spend, 30% save           | 50% spend, 40% save, 10% give |
+| $20–$50   | 70% spend, 30% save | 50% spend, 40% save, 10% give | 30% spend, 60% save, 10% give |
+| $50–$100  | 50% spend, 50% save | 30% spend, 60% save, 10% give | 20% spend, 70% save, 10% give |
 | Over $100 | 30% spend, 70% save | 20% spend, 70% save, 10% give | 10% spend, 80% save, 10% give |
 
 The pattern: bigger gifts and older kids get more shifted toward saving. Smaller gifts and younger kids get to keep more of the immediate joy.
@@ -60,7 +60,7 @@ If the relative is around, you can also defuse this in advance: "Mom and Dad hav
 
 ### "They want to spend all $100 on a single dumb thing"
 
-Resist the urge to forbid it. If the dumb thing fits inside their *spend* allocation, they get to spend it on a dumb thing.
+Resist the urge to forbid it. If the dumb thing fits inside their _spend_ allocation, they get to spend it on a dumb thing.
 
 The lesson lives in the moment two weeks later when they're bored of it. That regret is more instructive than any lecture you could give. (For more on this dynamic, see [Help Your Kid See Through Ads and Stop Impulse Buying](/blog/help-your-kid-see-through-ads).)
 
@@ -72,7 +72,7 @@ This is the magic moment. Help them name the goal in dollars and weeks.
 
 "Okay — you want a $250 bike. You've got $80 from your birthday. Save 80% of it and you've got $64 toward the bike. From your regular allowance, you save $5 a week. That's $20 a month. You're 9.3 months out." (Use a calculator and round.)
 
-Some families write the goal on a fridge magnet. Some use a thermometer chart. Some use a bucket in an app. All of them work — the point is making the goal *visible* so saving feels like progress, not deprivation.
+Some families write the goal on a fridge magnet. Some use a thermometer chart. Some use a bucket in an app. All of them work — the point is making the goal _visible_ so saving feels like progress, not deprivation.
 
 ## What to do with the save portion
 
@@ -99,4 +99,10 @@ A kid who's done this from age 6 to 12 has done it maybe 20-30 times. By the tim
 
 That's the whole goal. You're not optimizing one birthday. You're building a reflex they'll carry into their first paycheck, their first tax refund, their first windfall as an adult.
 
-The gift money playbook isn't really about birthdays. It's about not letting *any* money show up without a plan.
+The gift money playbook isn't really about birthdays. It's about not letting _any_ money show up without a plan.
+
+### Keep reading
+
+- [Save, Spend, Give Jars: A Simple System That Actually Sticks](/blog/save-spend-give-jars-for-kids)
+- [How Delayed Gratification Helps Kids Save Smarter](/blog/how-delayed-gratification-helps-kids-save-smarter)
+- [Piggy Banks to Goals: Simple Saving Tips for Kids](/blog/piggy-banks-to-goals-simple-saving-tips-for-kids)
