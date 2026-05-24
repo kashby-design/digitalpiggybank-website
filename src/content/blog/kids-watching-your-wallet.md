@@ -84,6 +84,6 @@ The goal isn't to make your kid match you. It's to help them understand the brai
 
 Your money habits matter, but not as a script your kid will copy. They matter as a window into how money works in real life. Open that window. Talk through your decisions. Make your trade offs visible. Then let your kid bring their own wiring to the table.
 
-If you want a simple way to make the save, spend, give conversation a regular part of your week, [Digital Piggy Bank](https://digitalpiggybank.com) tracks all three with your kids without printing chore charts or hunting for cash. It turns the abstract idea of "managing money" into something they can see, touch, and decide on every week.
+If you want a simple way to make the save, spend, give conversation a regular part of your week, [Digital Piggy Bank](https://www.digitalpiggybank.com) tracks all three with your kids without printing chore charts or hunting for cash. It turns the abstract idea of "managing money" into something they can see, touch, and decide on every week.
 
 Your wallet is teaching them something either way. You get to choose what.

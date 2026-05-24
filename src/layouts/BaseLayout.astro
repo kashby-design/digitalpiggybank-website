@@ -15,6 +15,7 @@ interface Props {
   description?: string;
   image?: string;
   extraSchema?: unknown[];
+  noindex?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   description = 'A digital piggy bank for parents of kids 4–12, because nobody carries cash anymore.',
   image = '/images/App-Icon.svg',
   extraSchema = [],
+  noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -39,6 +41,7 @@ const allSchema = [...baseSchema, ...extraSchema];
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

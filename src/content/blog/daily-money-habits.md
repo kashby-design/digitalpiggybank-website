@@ -71,7 +71,7 @@ That's the muscle getting stronger.
 
 A physical jar works fine for a 5-year-old. By 11 or 12, it's not enough. Your kid wants to track real numbers, see real progress, and have something that feels age-appropriate. They also need daily reinforcement that you can't always be there to provide.
 
-That's where a tool like [Digital Piggy Bank](https://digitalpiggybank.com) fits in. The app handles the daily cue, the visible progress, and the three-way save / spend / give split automatically. Your kid sees their money grow without you having to nag, and the habit loop runs on its own. You stay in the role of coach instead of bookkeeper.
+That's where a tool like [Digital Piggy Bank](https://www.digitalpiggybank.com) fits in. The app handles the daily cue, the visible progress, and the three-way save / spend / give split automatically. Your kid sees their money grow without you having to nag, and the habit loop runs on its own. You stay in the role of coach instead of bookkeeper.
 
 ## Start small. Start today.
 
