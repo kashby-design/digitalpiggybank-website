@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://digitalpiggybank.com',
+  site: 'https://www.digitalpiggybank.com',
   adapter: vercel(),
   integrations: [sitemap()],
 });

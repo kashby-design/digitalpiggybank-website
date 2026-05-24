@@ -1,4 +1,4 @@
-const SITE_URL = 'https://digitalpiggybank.com';
+const SITE_URL = 'https://www.digitalpiggybank.com';
 const ORG_NAME = 'Digital Piggy Bank';
 const LOGO_PATH = '/images/App-Icon.svg';
 
