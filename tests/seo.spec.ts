@@ -1,5 +1,8 @@
 import { test, expect, type Page } from '@playwright/test';
 
+// Must match `site` in astro.config.mjs and SITE_URL in src/lib/schema.ts.
+const SITE_ORIGIN = 'https://www.digitalpiggybank.com';
+
 async function getJsonLdBlocks(page: Page): Promise<unknown[]> {
   const raw = await page
     .locator('script[type="application/ld+json"]')
@@ -31,32 +34,29 @@ test.describe('Homepage', () => {
   test('canonical link is present', async ({ page }) => {
     await page.goto('/');
     const href = await page.locator('link[rel="canonical"]').getAttribute('href');
-    expect(href).toMatch(/^https:\/\/digitalpiggybank\.com/);
+    expect(href).toMatch(new RegExp(`^${SITE_ORIGIN}`));
   });
 
-  test('has Organization, WebSite, MobileApplication, and FAQPage JSON-LD', async ({ page }) => {
+  // The FAQ (and its FAQPage schema) moved to its own /faq page in 9ac8c9f,
+  // so it is asserted in the "FAQ page" block below rather than here.
+  test('has Organization, WebSite, and MobileApplication JSON-LD', async ({ page }) => {
     await page.goto('/');
     const blocks = await getJsonLdBlocks(page);
 
     const org = findByType(blocks, 'Organization');
     const site = findByType(blocks, 'WebSite');
     const app = findByType(blocks, 'MobileApplication');
-    const faq = findByType(blocks, 'FAQPage');
 
     expect(org, 'Organization schema missing').toBeDefined();
     expect(site, 'WebSite schema missing').toBeDefined();
     expect(app, 'MobileApplication schema missing').toBeDefined();
-    expect(faq, 'FAQPage schema missing').toBeDefined();
 
     expect(org!.name).toBe('Digital Piggy Bank');
     expect(Array.isArray(org!.sameAs)).toBe(true);
+    expect(org!.url).toBe(SITE_ORIGIN);
 
     expect(app!.applicationCategory).toBe('FinanceApplication');
     expect(Array.isArray(app!.offers)).toBe(true);
-
-    const faqEntities = faq!.mainEntity as { '@type': string; name: string }[];
-    expect(faqEntities.length).toBeGreaterThanOrEqual(3);
-    expect(faqEntities[0]['@type']).toBe('Question');
   });
 
   test('no unexpected console errors on load', async ({ page }) => {
@@ -71,6 +71,9 @@ test.describe('Homepage', () => {
       // not in `astro preview` — its 404 is expected locally.
       if (url.includes('_vercel/insights')) return;
       if (url.includes('va.vercel-scripts.com')) return;
+      // Clarity's collect endpoints can 4xx when called from localhost, which
+      // the Clarity project does not recognize as a valid origin.
+      if (url.includes('clarity.ms')) return;
       failedRequests.push(`${res.status()} ${url}`);
     });
 
@@ -79,6 +82,29 @@ test.describe('Homepage', () => {
 
     expect(jsErrors, 'unexpected JS errors').toEqual([]);
     expect(failedRequests, 'unexpected failed requests').toEqual([]);
+  });
+});
+
+test.describe('FAQ page', () => {
+  test('has FAQPage and BreadcrumbList JSON-LD on the canonical origin', async ({ page }) => {
+    await page.goto('/faq');
+    const blocks = await getJsonLdBlocks(page);
+
+    const faq = findByType(blocks, 'FAQPage');
+    const crumbs = findByType(blocks, 'BreadcrumbList');
+
+    expect(faq, 'FAQPage schema missing').toBeDefined();
+    expect(crumbs, 'BreadcrumbList schema missing').toBeDefined();
+
+    const faqEntities = faq!.mainEntity as { '@type': string; name: string }[];
+    expect(faqEntities.length).toBeGreaterThanOrEqual(3);
+    expect(faqEntities[0]['@type']).toBe('Question');
+
+    // Breadcrumb URLs must use the www canonical origin, not the bare domain.
+    const items = crumbs!.itemListElement as { item: string }[];
+    for (const item of items) {
+      expect(item.item).toContain(SITE_ORIGIN);
+    }
   });
 });
 
@@ -152,7 +178,7 @@ test.describe('robots.txt and sitemap', () => {
     expect(res.status()).toBe(200);
     const body = await res.text();
     expect(body).toMatch(/User-agent: \*/);
-    expect(body).toMatch(/Sitemap: https:\/\/digitalpiggybank\.com\/sitemap-index\.xml/);
+    expect(body).toContain(`Sitemap: ${SITE_ORIGIN}/sitemap-index.xml`);
   });
 
   test('sitemap-index.xml is accessible', async ({ request }) => {

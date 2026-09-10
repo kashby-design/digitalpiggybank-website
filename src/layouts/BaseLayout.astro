@@ -110,6 +110,18 @@ const metaPixelId = import.meta.env.PUBLIC_META_PIXEL_ID;
       import { inject } from '@vercel/analytics';
       inject();
     </script>
+    <!--
+      Microsoft Clarity (honors Global Privacy Control, same as the Meta Pixel above).
+      Bundled rather than is:inline because the loader ships as an npm package.
+    -->
+    <script>
+      import Clarity from '@microsoft/clarity';
+      const projectId = import.meta.env.PUBLIC_CLARITY_PROJECT_ID;
+      const nav = navigator as Navigator & { globalPrivacyControl?: boolean };
+      if (projectId && !nav.globalPrivacyControl) {
+        Clarity.init(projectId);
+      }
+    </script>
     <script>
       (function () {
         if (!('IntersectionObserver' in window)) return;
