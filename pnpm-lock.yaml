@@ -23,6 +23,9 @@ importers:
       '@fontsource/orelega-one':
         specifier: ^5.2.7
         version: 5.2.7
+      '@microsoft/clarity':
+        specifier: ^1.0.2
+        version: 1.0.2
       '@vercel/analytics':
         specifier: ^2.0.1
         version: 2.0.1
@@ -423,6 +426,9 @@ packages:
     resolution: {integrity: sha512-uwPAhccfFJlsfCxMYTwOdVfOz3xqyj8xYL3zJj8f0pb30tLohnnFPhLuqp4/qoEz8sNxe4SESZedcBojRefIzg==}
     engines: {node: '>=18'}
     hasBin: true
+
+  '@microsoft/clarity@1.0.2':
+    resolution: {integrity: sha512-9EZYROFpJxEGmQpHvUFqvD3ZJ7QQSqnibYSWmS+1xusoZfG1QQ1/Al9yVBBc11DWMbJrs1pe1hLT273it/skJg==}
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
@@ -2016,6 +2022,8 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@microsoft/clarity@1.0.2': {}
 
   '@oslojs/encoding@1.1.0': {}
 

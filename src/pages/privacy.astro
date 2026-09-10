@@ -6,7 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="legal-page section">
     <div class="container legal-content">
       <h1>Privacy Policy</h1>
-      <p><strong>Effective Date:</strong> Jun 22, 2026</p>
+      <p><strong>Effective Date:</strong> Sep 10, 2026</p>
 
       <h2>1. Introduction</h2>
       <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and share information about you across both the Digital Piggy Bank mobile app, which helps you keep a ledger of your kids' piggy bank activities, and this website. This website is an informational and marketing site — most of the personal information described below is collected only through the mobile app, while the website collects limited analytics and advertising data as described in Sections 2 and 4.</p>
@@ -16,10 +16,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <li><strong>Personal Information (app):</strong> We may collect personal information such as your name, email address, and any other information you provide when creating an account or using the app.</li>
         <li><strong>Child Information (app):</strong> If you choose to enter details about your child's piggy bank, we may collect their name, age, and the amounts deposited or withdrawn from their piggy bank.</li>
         <li><strong>Usage Data (app):</strong> We may collect information about how you use the app, including the time, frequency, and duration of your activities.</li>
-        <li><strong>Website Analytics &amp; Advertising:</strong> When you visit this website, we collect limited data through two services:
+        <li><strong>Website Analytics &amp; Advertising:</strong> When you visit this website, we collect limited data through three services:
           <ul>
             <li><em>Vercel Analytics</em> — privacy-friendly and <strong>cookieless</strong>. It collects only aggregate, anonymous information such as page views, the referring site, your approximate country, and your device or browser type. It does not use cookies and does not track you across other websites.</li>
             <li><em>Meta Pixel</em> — provided by Meta Platforms, Inc. (Facebook and Instagram). It sets a cookie (for example, <code>_fbp</code>) and sends information about your visit and interactions to Meta. We use it to measure and target our Facebook and Instagram advertising, including retargeting and building custom or lookalike audiences.</li>
+            <li><em>Microsoft Clarity</em> — provided by Microsoft Corporation. It sets first-party cookies (<code>_clck</code> and <code>_clsk</code>) and records how you interact with our pages, including mouse movement, clicks, scrolling, and the sequence of pages you view. Microsoft uses this to reconstruct anonymized <strong>session replays</strong> and heatmaps, which we review to understand where visitors get stuck and to improve the site. Clarity is configured to mask text you type into form fields, but it does capture on-screen activity, so please avoid entering sensitive information into any field on this site.</li>
           </ul>
         </li>
       </ul>
@@ -31,27 +32,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <li>Maintain your account and manage your child's piggy bank ledger.</li>
         <li>Communicate with you, including sending updates and notifications.</li>
         <li>Measure website traffic and the performance of our advertising.</li>
+        <li>Understand how visitors navigate this website, through aggregated analytics and session replays, so we can fix problems and improve the site.</li>
         <li>Ensure compliance with applicable laws and regulations.</li>
       </ul>
 
       <h2>4. Cookies &amp; Tracking Technologies</h2>
-      <p>The only tracking technology that sets a cookie on this website is the Meta Pixel, which places advertising cookies (such as <code>_fbp</code>) to support our Facebook and Instagram ad campaigns. Vercel Analytics is cookieless, and we do not use any other cookies, tracking pixels, or similar technologies. Because we do not use cookies for essential functionality, you can block or delete the Meta Pixel cookie through your browser settings without affecting your ability to use the site. See Section 6 for additional opt-out options.</p>
+      <p>Two of the services described above set cookies on this website:</p>
+      <ul>
+        <li>The <strong>Meta Pixel</strong> places advertising cookies (such as <code>_fbp</code>) to support our Facebook and Instagram ad campaigns.</li>
+        <li><strong>Microsoft Clarity</strong> places first-party analytics cookies (<code>_clck</code> and <code>_clsk</code>) to recognize a returning visitor and to group activity into a single session replay.</li>
+      </ul>
+      <p>Clarity also loads a small tracking pixel from Microsoft's own domains (<code>clarity.ms</code> and <code>bing.com</code>) that synchronizes a Microsoft advertising identifier (<code>MUID</code>) across Microsoft services. Vercel Analytics is cookieless, and beyond the three services described above we do not use any other cookies, tracking pixels, or similar technologies. Because we do not use cookies for essential functionality, you can block or delete any of these cookies through your browser settings without affecting your ability to use the site. See Section 6 for additional opt-out options.</p>
 
       <h2>5. How We Share Your Information</h2>
       <p>We do not sell or rent your personal information to third parties. We may share information with third-party service providers who help us operate the app and website, provided they agree to protect your information in accordance with this Privacy Policy. Specifically:</p>
       <ul>
         <li><strong>Meta Platforms, Inc.</strong> — website-visit data is shared with Meta through the Meta Pixel for advertising and measurement purposes.</li>
         <li><strong>Vercel Inc.</strong> — our website hosting and analytics provider, which processes the cookieless, aggregate analytics described above.</li>
+        <li><strong>Microsoft Corporation</strong> — website-interaction data is shared with Microsoft through Clarity to produce session replays and heatmaps for product analytics. Microsoft also associates your visit with its own advertising identifier (<code>MUID</code>) across Microsoft services, including Bing, and may use the data as described in the Microsoft Privacy Statement linked in Section 6.</li>
       </ul>
 
       <h2>6. Your Choices &amp; Opt-Out</h2>
-      <p>You have several ways to opt out of the advertising tracking described above:</p>
+      <p>You have several ways to opt out of the advertising and analytics tracking described above:</p>
       <ul>
-        <li><strong>Global Privacy Control (GPC):</strong> If your browser or a browser extension sends a Global Privacy Control signal, this website automatically detects it and the Meta Pixel will not load for your visit.</li>
+        <li><strong>Global Privacy Control (GPC):</strong> If your browser or a browser extension sends a Global Privacy Control signal, this website automatically detects it and <strong>neither the Meta Pixel nor Microsoft Clarity will load</strong> for your visit — no advertising cookies are set, and no session replay is recorded.</li>
         <li><strong>Meta ad settings:</strong> You can manage how Meta uses your data for advertising in your <a href="https://www.facebook.com/settings?tab=ads" target="_blank" rel="noopener noreferrer">Facebook ad preferences</a>.</li>
         <li><strong>Industry opt-out:</strong> You can opt out of interest-based advertising from participating companies at <a href="https://optout.aboutads.info" target="_blank" rel="noopener noreferrer">optout.aboutads.info</a>.</li>
+        <li><strong>Microsoft Clarity:</strong> You can read how Microsoft handles this data in the <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>. Blocking the <code>_clck</code> and <code>_clsk</code> cookies in your browser, or sending a GPC signal, stops Clarity from recording your visit.</li>
       </ul>
-      <p>If you are a California resident, our use of the Meta Pixel may be considered a "sale" or "sharing" of personal information under the California Consumer Privacy Act (CCPA/CPRA). You can exercise your right to opt out using any of the methods above, including by enabling Global Privacy Control, or by contacting us at the email address in Section 11.</p>
+      <p>If you are a California resident, our use of the Meta Pixel and Microsoft Clarity may be considered a "sale" or "sharing" of personal information under the California Consumer Privacy Act (CCPA/CPRA). You can exercise your right to opt out using any of the methods above, including by enabling Global Privacy Control, or by contacting us at the email address in Section 11.</p>
 
       <h2>7. Data Security</h2>
       <p>We take reasonable measures to protect your information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
