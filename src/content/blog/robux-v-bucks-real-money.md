@@ -4,8 +4,8 @@ date: 2026-11-04
 description: "Robux and V-Bucks hide what things really cost. Here's how to turn game coins into dollars and show your kid what a skin takes from their own balance."
 primeryKeywords: "robux and v-bucks for kids"
 SecondaryKeywords: "how much are robux in real money, in-game purchases kids, kids spending money on games, kids buying skins with their own money, roblox spending limit, fortnite v-bucks parents, virtual currency kids"
-image: "../../images/blog/game-coins-dollars.png"
-imageAlt: "A child at the kitchen table holding a tablet while gold game coins turn into green dollar bills, with a parent working out the math beside them"
+image: "../../images/blog/kid-playing-video-games.png"
+imageAlt: "A child sitting cross-legged on a living room rug playing a video game, lit by the glow of a TV seen from behind"
 tags:
   - digital-money
   - allowance
